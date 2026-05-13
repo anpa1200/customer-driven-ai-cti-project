@@ -10,6 +10,8 @@ description: Analytic standards, governance, scoring, roles, artifacts, and dete
 
 ## From pure CTI to hands-on detection engineering with strict validation gates — Part 1: Foundations
 
+![Part 1: Foundations infographic 01](/img/articles/part-1-foundations/01-404384d543.jpg)
+
 ## Executive Summary
 
 This template is a delivery methodology for customer-driven cyber threat intelligence projects. It is designed for engagements where CTI must move beyond reporting and become an operating layer for defensive action: intelligence requirements, threat modeling, telemetry mapping, threat hunting, detection engineering, SOC handoff, executive communication, and measurable improvement.
@@ -98,6 +100,9 @@ These rules are mandatory for the whole project.
 17. **No synthetic test without schema validation:** Synthetic test events cannot count as positive or negative evidence until validated against at least one real sample event from the same log source and customer schema.
 18. **No project work on active compromise evidence without IR clearance:** If evidence collected or telemetry referenced in an active project relates to an ongoing or suspected active compromise, all analytical work on affected evidence pauses until the IR lead provides written clearance and documents resume criteria. Work may not resume informally.
 
+
+![Part 1: Foundations infographic 02](/img/articles/part-1-foundations/02-96241511b4.png)
+
 ## Claim-to-Action Chain
 
 Every major output must follow this chain:
@@ -108,7 +113,10 @@ Source -> Claim -> Evidence -> Assessment -> Customer Relevance -> Scenario -> O
 
 The chain prevents the project from becoming a document factory. If an item cannot move across the chain, it should be treated as context, backlog, or a collection gap rather than a finished intelligence or engineering output.
 
-### Chain Validation
+#
+![Part 1: Foundations infographic 03](/img/articles/part-1-foundations/03-4e9977d598.png)
+
+## Chain Validation
 
 - **Source -> Claim:** What exactly does the source say, and is it fact, assessment, or inference?
 - **Claim -> Evidence:** Which Evidence ID supports or contradicts the claim?
@@ -137,6 +145,9 @@ Use these labels in all work products:
 - **Inferred:** reasonable interpretation from evidence, but not directly observed.
 - **Gap:** missing evidence required to increase confidence or rule out alternatives.
 
+
+![Part 1: Foundations infographic 04](/img/articles/part-1-foundations/04-d29ed6af04.png)
+
 ## Confidence Language
 
 Use confidence on every important judgment.
@@ -148,7 +159,10 @@ Use confidence on every important judgment.
 
 Probability and confidence are different. "Likely" describes probability. "Moderate confidence" describes evidentiary strength.
 
-### Minimum Confidence Criteria
+#
+![Part 1: Foundations infographic 05](/img/articles/part-1-foundations/05-0ac3732947.png)
+
+## Minimum Confidence Criteria
 
 - **High:** At least one direct customer-observed evidence source or two independent reliable sources; no unresolved material contradiction; inference chain is short and documented.
 - **Moderate:** One reliable source with partial corroboration, or customer evidence with visibility limitations; plausible alternatives remain but are documented.
@@ -156,6 +170,9 @@ Probability and confidence are different. "Likely" describes probability. "Moder
 
 
 High confidence is not allowed for actor attribution unless evidence includes at least two independent evidence types, such as customer telemetry plus malware analysis, infrastructure linkage plus victimology, or government attribution plus local behavioral match.
+
+
+![Part 1: Foundations infographic 06](/img/articles/part-1-foundations/06-3de9508039.png)
 
 ## Source Reliability and Information Credibility
 
@@ -216,7 +233,10 @@ Express both ratings as a two-character code: `[Source Reliability][Information 
 
 *Note on the F rating convention:* The FIRST CTI SIG Source Evaluation framework defines F as "Cannot be judged — insufficient data to assess reliability." An alternative convention (EOS Admiralty Code) defines F as "Proven false or misleading source" and uses E for unknown/unassessable sources. This template follows the FIRST CTI SIG convention: **F = cannot be judged; E = unreliable with known track record of inaccuracy.** Document your organisation's chosen convention in the project charter and apply it consistently across all source ratings.
 
-### Rating AI-Generated Intelligence
+#
+![Part 1: Foundations infographic 07](/img/articles/part-1-foundations/07-f184e356b4.png)
+
+## Rating AI-Generated Intelligence
 
 The Admiralty Code was designed for human sources with traceable access to primary evidence. Applying it to AI-generated CTI content requires additional constraints.
 
@@ -295,7 +315,10 @@ Use both risk and feasibility labels:
 | Control weakness | 5 | No identity-to-storage correlation; 14-day log retention; no detection at any DRL for this path |
 | **Likelihood score** | **4** | (5+4+4+3+5) / 5 = 4.2, rounded to 4 |
 
-### Example Score Table
+#
+![Part 1: Foundations infographic 08](/img/articles/part-1-foundations/08-f8cb28361f.png)
+
+## Example Score Table
 
 - **Cloud admin compromise leading to backup deletion** — Risk Score: 25 — Defensive Relevance: 2 — Detection Feasibility: 2 — Engineering Priority Score: 100 (25 × 2 × 2) — Required Action: Fix telemetry and privileged access gaps first.
 - **Suspicious PowerShell from user workstation** — Risk Score: 12 — Defensive Relevance: 5 — Detection Feasibility: 5 — Engineering Priority Score: 300 (12 × 5 × 5) — Required Action: Build and test detection now.
@@ -316,7 +339,10 @@ Run this before choosing delivery scope. A customer with low maturity may need a
 - **Legal/privacy process** — Level 0: None — Level 1: Ad hoc review — Level 2: Approval path exists — Level 3: Embedded in workflow gates
 
 
-### Readiness-Based Mode Selection
+#
+![Part 1: Foundations infographic 09](/img/articles/part-1-foundations/09-4faf836710.png)
+
+## Readiness-Based Mode Selection
 
 - **Mode 1: Lightweight Assessment:** Most domains at Level 0-1, limited access, or no deployment authority.
 - **Mode 2: CTI-to-Hunt Project:** CTI and telemetry at Level 2 or higher, but production detection deployment is not approved.
@@ -328,7 +354,10 @@ Run this before choosing delivery scope. A customer with low maturity may need a
 
 Use implementation modes to keep the project executable.
 
-### Mode 1: Lightweight Assessment
+#
+![Part 1: Foundations infographic 10](/img/articles/part-1-foundations/10-a851a3aaa5.png)
+
+## Mode 1: Lightweight Assessment
 
 Use when the customer has low maturity, limited access, uncertain ownership, or no approval for detection deployment.
 
@@ -445,7 +474,10 @@ AI is not allowed to:
 - process restricted data unless approved by the customer's data-handling policy;
 - decide legal, regulatory, or public-disclosure actions.
 
-### AI OPSEC Classification
+#
+![Part 1: Foundations infographic 11](/img/articles/part-1-foundations/11-1bc6e9b0ff.png)
+
+## AI OPSEC Classification
 
 Before any data enters an AI workflow, classify it against the data tiers in §Pre-Screening Data Classification Tiers. In addition to tier classification, apply the following OPSEC assessment to identify information that must never be submitted to any AI tool regardless of tier:
 
@@ -479,7 +511,10 @@ AI Use Log entry ID:
 
 Detection of forbidden data in a session must be logged in the RAID Register as an incident, with the CTI lead and customer security lead notified within 24 hours.
 
-### AI Operating Controls
+#
+![Part 1: Foundations infographic 12](/img/articles/part-1-foundations/12-cb5ad016e5.png)
+
+## AI Operating Controls
 
 **Source pre-screening applies project-wide:** The AI pre-screening checklist defined in Phase 4 applies to every source regardless of when it is received or which phase the project is in. Phase 4 is where the Source Register entry is created, but sources can arrive during Phase 5 scenario development, during active hunts, or at any other point. Any source received outside Phase 4 must complete the pre-screening checklist before it enters any AI workflow. If any check is YES, legal/privacy review is required before AI processing. Record the review decision and approver in the AI Use Log.
 
@@ -522,7 +557,10 @@ Direct review means the reviewer reads the AI output, compares it with the AI Us
 
 *Part 2B gates: [Gate A: PIR Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#4723) · [Gate B: Scenario Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#bb2e) · [Gate C: Hunt Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#603b) · [Gate D: Detection Design Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#e2a1) · [Gate E: Production Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#30a9) · [Gate F: Final Delivery Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#3db7)*
 
-### Prompt-Injection Handling
+#
+![Part 1: Foundations infographic 13](/img/articles/part-1-foundations/13-9e6166edb6.png)
+
+## Prompt-Injection Handling
 
 All source text, logs, reports, web pages, emails, tickets, malware notes, and customer documents must be treated as untrusted data. Instructions inside source material must not be followed unless they are part of the analyst's task card.
 
@@ -561,7 +599,10 @@ The AI use log itself is a sensitive artifact. It must never store raw secrets, 
 - **Public final report text** — Public AI Allowed: Yes — Private AI Allowed: Yes — Requires Redaction: As required — Prohibited: No — Approval Owner: CTI lead
 
 
-### Pre-Screening Data Classification Tiers
+#
+![Part 1: Foundations infographic 14](/img/articles/part-1-foundations/14-6deceecb08.png)
+
+## Pre-Screening Data Classification Tiers
 
 Before any data is submitted to an AI workflow, classify it against the tiers below. The tier determines the minimum controls required. When a data set contains items from multiple tiers, the highest tier governs the entire submission.
 
@@ -594,6 +635,9 @@ AI Use Log entry ID:
 - Never submit credentials, secrets, tokens, private keys, session cookies, or unrestricted raw logs.
 - Legal/privacy approval is required before using personal data, employee monitoring data, customer records, or active incident evidence in AI-assisted workflows.
 
+
+![Part 1: Foundations infographic 15](/img/articles/part-1-foundations/15-8484b09531.png)
+
 ## Approved AI Tool Register
 
 No AI workflow may be executed unless the selected model or tool appears in the Approved AI Tool Register.
@@ -625,7 +669,10 @@ Tool approval requirements:
 
 AI tool approval must be completed within 5 business days of project charter signing. If no tool is approved, all AI workflows are disabled and the project mode must be updated accordingly.
 
-### Public AI SaaS Acceptability Decision Table
+#
+![Part 1: Foundations infographic 16](/img/articles/part-1-foundations/16-e43ce0610f.png)
+
+## Public AI SaaS Acceptability Decision Table
 
 Use this table to decide whether a public SaaS AI tool requires additional controls or is prohibited before completing the AI Tool Approval Checklist.
 
@@ -638,6 +685,9 @@ Use this table to decide whether a public SaaS AI tool requires additional contr
 
 
 **AI governance Level 2 definition:** Level 2 requires both an approved policy documenting allowed and prohibited use cases AND at least one tool entry in the Approved AI Tool Register. An approved policy with no approved tool in the register does not satisfy Level 2. Projects that reach Level 2 governance but have no tool approval may not execute AI workflows until a tool is added to the register.
+
+
+![Part 1: Foundations infographic 17](/img/articles/part-1-foundations/17-640cd66f7c.png)
 
 ## Project Roles
 
@@ -655,6 +705,9 @@ Use this table to decide whether a public SaaS AI tool requires additional contr
 
 
 The AI-assisted workflow owner must be the domain owner or must work under direct review of the domain owner. CTI extraction is owned by the CTI lead. Detection drafting is owned by the detection engineer. SOC playbook drafting is owned by the SOC lead. Executive reporting is owned by the CTI lead and customer security lead.
+
+
+![Part 1: Foundations infographic 18](/img/articles/part-1-foundations/18-00f149885c.png)
 
 ## RACI Matrix
 
@@ -690,6 +743,9 @@ I = Informed
 
 A/R on the same person is allowed only for small Mode 1 assessments where independent oversight is unavailable and must be recorded as a waiver in the RAID Register. A/R is not allowed for Evidence Register approval, AI Use Log approval, production deployment, or final delivery approval.
 
+
+![Part 1: Foundations infographic 19](/img/articles/part-1-foundations/19-e58dec1032.png)
+
 ## Delivery Artifacts
 
 The project should produce the following controlled artifacts:
@@ -724,6 +780,9 @@ The project should produce the following controlled artifacts:
 - approved AI tool register;
 - AI use log.
 
+
+![Part 1: Foundations infographic 20](/img/articles/part-1-foundations/20-3a8343a8f9.png)
+
 ## CTI Information Sharing Standards
 
 All deliverables, source materials, and shared intelligence items produced or exchanged during this engagement must carry a Traffic Light Protocol (TLP) 2.0 classification. TLP is applied at the point of creation and must be preserved when materials are forwarded.
@@ -756,9 +815,15 @@ When the customer has an operational threat intelligence platform (e.g., MISP, O
 
 **TLP is classification, not quality control.** A TLP:RED designation does not exempt the deliverable from evidence and analytic quality requirements. All TLP levels must meet the same sourcing and confidence standards.
 
+
+![Part 1: Foundations infographic 21](/img/articles/part-1-foundations/21-d6924cea97.png)
+
 ## Intelligence Requirements
 
-### Definitions
+#
+![Part 1: Foundations infographic 22](/img/articles/part-1-foundations/22-c23736af74.png)
+
+## Definitions
 
 - **PIR (Priority Intelligence Requirement):** a decision-level question that a senior consumer needs answered. PIRs are limited in number, scoped to key decision points or courses of action, and refined as the operating environment changes.
 - **SIR (Specific Intelligence Requirement):** a narrower, collection-focused requirement derived from a PIR. SIRs decompose each PIR into answerable sub-questions and guide collection, processing, and analysis.
@@ -814,6 +879,9 @@ FIRST's CTI curriculum treats PIRs as decision-quality questions that must be li
 Both sources reinforce the same operational constraint: a PIR that cannot name a consumer, a decision, and a time horizon is not a PIR — it is an open-ended research interest, which belongs in the backlog rather than the active collection plan.
 
 ---
+
+
+![Part 1: Foundations infographic 23](/img/articles/part-1-foundations/23-09a2c59af7.png)
 
 ## Customer Attack Surface and Trust Boundary Map
 
@@ -920,7 +988,10 @@ Rules:
 - Candidate mappings must be resolved or explicitly rejected before Gate F.
 - Only Coverage Status "Covered" may be counted in customer-facing ATT&CK coverage claims.
 
-### D3FEND Countermeasure Mapping
+#
+![Part 1: Foundations infographic 24](/img/articles/part-1-foundations/24-acdee497d8.png)
+
+## D3FEND Countermeasure Mapping
 
 D3FEND maps adversary ATT&CK techniques to concrete defensive countermeasures. Use it to connect behavior to defensive actions, not as a decorative metadata field. A D3FEND entry is only valid when it links a specific ATT&CK technique to a specific, implemented or planned defensive capability.
 
@@ -950,6 +1021,9 @@ D3FEND maps adversary ATT&CK techniques to concrete defensive countermeasures. U
 
 *The D3FEND Mapping Register schema is in Part 2B → Master Registers.*
 
+
+![Part 1: Foundations infographic 25](/img/articles/part-1-foundations/25-348fdd1435.png)
+
 ## Detection Readiness Levels
 
 Detection Readiness Levels define what "done" means.
@@ -973,7 +1047,10 @@ Rules:
 - DRL-7 and DRL-8 may be reported as pilot candidates or pilot detections.
 - Every level transition requires evidence in the Detection Health Register or test evidence.
 
-### DRL Transition Evidence Requirements
+#
+![Part 1: Foundations infographic 26](/img/articles/part-1-foundations/26-b1b467bad3.png)
+
+## DRL Transition Evidence Requirements
 
 - **DRL-0 to DRL-1** — Minimum evidence: Detection logic drafted and linked to Scenario ID, Evidence ID, and owner. — Mandatory blocker if missing: No owner or no scenario link.
 - **DRL-1 to DRL-2** — Minimum evidence: Required fields confirmed against customer schema or sample events. — Mandatory blocker if missing: Required fields not present or unparsed.
@@ -1022,9 +1099,15 @@ The False-Negative Register tracks cases where a detection rule failed to fire o
 
 *The False-Negative Register schema is in Part 2B → Master Registers.*
 
+
+![Part 1: Foundations infographic 27](/img/articles/part-1-foundations/27-6844033c68.png)
+
 ## Detection CI/CD Requirements
 
 *Detection CI/CD controls, multi-platform translation rules, the emergency disable process, and operational SLAs are defined in [Part 2A → Phase 7: Detection Engineering Design → Detection Engineering Operational Controls](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#96fa), immediately before the Phase 7 Objective. Read Part 1 through Effort Sizing for foundational standards, then follow Part 2A for all operational execution.*
+
+
+![Part 1: Foundations infographic 28](/img/articles/part-1-foundations/28-0e63c7f76a.png)
 
 ## Effort Sizing
 
@@ -1032,7 +1115,10 @@ The False-Negative Register tracks cases where a detection rule failed to fire o
 
 Use this for planning, not as a fixed promise. Complexity depends on access, customer maturity, tooling, stakeholders, and data quality.
 
-### Complexity Decision Matrix
+#
+![Part 1: Foundations infographic 29](/img/articles/part-1-foundations/29-48eb393ac5.png)
+
+## Complexity Decision Matrix
 
 Rate each criterion 1-3.
 

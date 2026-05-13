@@ -31,6 +31,7 @@ https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 │       └── full-workflow-quick-reference.md
 ├── src/
 ├── scripts/
+│   ├── embed_article_images.py
 │   └── import_medium_images.py
 ├── static/
 │   └── img/articles/
@@ -67,6 +68,12 @@ python3 scripts/import_medium_images.py
 ```
 
 The importer reads the public Medium RSS feed, downloads article images into `static/img/articles/`, writes `content/medium/image-manifest.json`, and regenerates `docs/infographics.md`.
+
+To place imported images inside the article text:
+
+```bash
+python3 scripts/embed_article_images.py
+```
 
 ## GitHub Pages
 

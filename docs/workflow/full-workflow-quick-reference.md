@@ -8,6 +8,8 @@ description: End-to-end quick reference for the Customer-Driven AI CTI Project w
 
 # Customer-Driven AI CTI Project: Full Workflow Quick Reference
 
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 01](/img/articles/workflow/01-5961f199fd.png)
+
 Most cyber threat intelligence programs fail at the same point: they produce reports nobody uses. The analyst delivers a threat summary; the SOC ignores it; the CISO asks why the budget exists. The gap is not effort — it is structure. Intelligence that cannot be traced from a customer decision all the way to a fired detection rule, a tuned alert, and a measurable outcome is not intelligence. It is research.
 
 This project template exists to close that gap. It is a 15-phase, gate-controlled methodology for delivering CTI that ends in production detections, executive metrics, and a customer who can articulate exactly what changed in their security posture. AI accelerates every phase — source extraction, hypothesis generation, detection drafting, report writing — but the methodology enforces analytic discipline that no AI can shortcut: source rating, evidence labeling, confidence calibration, quality gate sign-off, and chain integrity from the first PIR to the last deliverable.
@@ -36,6 +38,9 @@ See also: [Minimum Viable Customer Delivery](https://medium.com/@1200km/customer
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 02](/img/articles/workflow/02-3edd8fd65f.png)
+
 ## Phase 0: Project Charter and Guardrails
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#8509)
@@ -51,6 +56,9 @@ Create a professional flat-design infographic titled "Phase 0: Project Charter a
 ```
 
 ---
+
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 03](/img/articles/workflow/03-3f76a979b2.png)
 
 ## Phase 1: Customer Decision and PIR Definition
 
@@ -70,6 +78,9 @@ Create a professional flat-design infographic titled "Phase 1: PIR and SIR Defin
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 04](/img/articles/workflow/04-26fcbd0bd6.png)
+
 ## Phase 2: Crown-Jewel and Business-Impact Mapping
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59)
@@ -87,6 +98,9 @@ Create a professional flat-design infographic titled "Phase 2: Crown-Jewel Mappi
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 05](/img/articles/workflow/05-c8674a87a2.png)
+
 ## Phase 3: Telemetry and Data Readiness Assessment
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#5905)
@@ -103,6 +117,9 @@ Create a professional flat-design infographic titled "Phase 3: Telemetry and Dat
 ```
 
 ---
+
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 06](/img/articles/workflow/06-348287d6df.png)
 
 ## Phase 4: External CTI Source Intake and Validation
 
@@ -122,6 +139,9 @@ Create a professional flat-design infographic titled "Phase 4: Source Intake and
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 07](/img/articles/workflow/07-b96ec632a7.png)
+
 ## Phase 5: Threat Scenario Development
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#85b8)
@@ -140,6 +160,9 @@ Create a professional flat-design infographic titled "Phase 5: Threat Scenario D
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 08](/img/articles/workflow/08-a12e3aa3ac.png)
+
 ## Phase 6: Hypothesis-Driven Threat Hunting Backlog
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#e905)
@@ -155,6 +178,9 @@ Create a professional flat-design infographic titled "Phase 6: Hunt Hypothesis B
 ```
 
 ---
+
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 09](/img/articles/workflow/09-614a63fbd4.png)
 
 ## Phase 7: Detection Engineering Design
 
@@ -175,6 +201,9 @@ Create a professional flat-design infographic titled "Phase 7: Detection Enginee
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 10](/img/articles/workflow/10-b4055c8533.png)
+
 ## Phase 8: Detection-as-Code Implementation
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59)
@@ -190,6 +219,9 @@ Create a professional flat-design infographic titled "Phase 8: Detection-as-Code
 ```
 
 ---
+
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 11](/img/articles/workflow/11-b1d0dca8d0.png)
 
 ## Phase 9: Test Data, Simulation, and Replay
 
@@ -210,6 +242,9 @@ Create a professional flat-design infographic titled "Phase 9: Test, Simulation,
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 12](/img/articles/workflow/12-bc57ef566d.png)
+
 ## Phase 10: SOC Triage and Incident Workflow
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#fd9a)
@@ -226,6 +261,9 @@ Create a professional flat-design infographic titled "Phase 10: SOC Triage and I
 ```
 
 ---
+
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 13](/img/articles/workflow/13-de8e29a2ae.png)
 
 ## Phase 11: Pilot Deployment and Tuning
 
@@ -244,6 +282,9 @@ Create a professional flat-design infographic titled "Phase 11: Pilot Deployment
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 14](/img/articles/workflow/14-66984961b9.png)
+
 ## Phase 12: Production Deployment
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#4202)
@@ -259,6 +300,9 @@ Create a professional flat-design infographic titled "Phase 12: Production Deplo
 ```
 
 ---
+
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 15](/img/articles/workflow/15-74c010d8fc.png)
 
 ## Phase 13: Executive and Technical Reporting
 
@@ -277,6 +321,9 @@ Create a professional flat-design infographic titled "Phase 13: Executive and Te
 
 ---
 
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 16](/img/articles/workflow/16-9f3ae9aa20.png)
+
 ## Phase 14: Continuous Improvement and Maturity Loop
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59)
@@ -294,6 +341,9 @@ Create a professional flat-design infographic titled "Phase 14: Continuous Impro
 ```
 
 ---
+
+
+![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 17](/img/articles/workflow/17-c06ddf1ec5.png)
 
 ## Quality Gates
 

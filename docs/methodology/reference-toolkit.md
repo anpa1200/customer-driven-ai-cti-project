@@ -10,6 +10,8 @@ description: AI workflows, LLM task cards, quality gates, registers, worked exam
 
 ## From pure CTI to hands-on detection engineering with strict validation gates — Part 2B: Reference Toolkit
 
+![Part 2B: Reference Toolkit infographic 01](/img/articles/part-2b-reference-toolkit/01-fdcd057251.png)
+
 ---
 
 **This is Part 2B of a three-part series.** Part 2B is the reference toolkit for practitioners using Part 2A. It contains the AI Workflow Library, LLM Task Cards, Strict Quality Gates, Master Registers, the end-to-end Worked Example, and the Final Customer Delivery Package. Read Part 1 for methodology rules and analytic standards. Read Part 2A for the phase-by-phase execution guide. Return to Part 2B during project execution for controlled AI task instructions, gate evidence requirements, register schemas, and delivery checklists.

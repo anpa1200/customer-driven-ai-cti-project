@@ -10,6 +10,8 @@ description: Phase 0 through Phase 14 execution guide for CTI-to-detection deliv
 
 ## From pure CTI to hands-on detection engineering with strict validation gates — Part 2A: Phase-by-Phase Execution Guide
 
+![Part 2A: Phase-by-Phase Execution Guide infographic 01](/img/articles/part-2a-execution-guide/01-99da5c2372.png)
+
 ---
 
 **This article is part of a three-part series.** Part 2A (this document) is the phase-by-phase execution guide — the *how to do it*, from project charter and guardrails (Phase 0) through continuous improvement and maturity loop (Phase 14), including project execution controls and the master workflow. Part 1 covers the foundations: methodology rules, analytic standards, scoring models, governance, roles, and delivery frameworks. Part 2B is the reference toolkit: AI Workflow Library, LLM Task Cards, Strict Quality Gates, Master Registers, end-to-end Worked Example, and Final Customer Delivery Package. Read Part 1 first, then use Part 2A as your operational execution guide and Part 2B as your reference during project work.
@@ -49,6 +51,9 @@ The binding rule throughout Part 2A is unchanged from Part 1: no CTI output is a
 - [Project Execution Controls](#project-execution-controls)
 - [Master Workflow](#master-workflow)
 
+
+![Part 2A: Phase-by-Phase Execution Guide infographic 02](/img/articles/part-2a-execution-guide/02-65ba690848.png)
+
 ## Phase 0: Project Charter and Guardrails
 
 ### Objective
@@ -69,7 +74,10 @@ Define scope, success criteria, data handling, AI rules, stakeholders, and deliv
 - current security tooling;
 - existing CTI, SOC, and incident response processes.
 
-### Activities
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 03](/img/articles/part-2a-execution-guide/03-667f3c4468.png)
+
+## Activities
 
 1. Confirm project scope and exclusions.
 2. Define what decisions the project must support.
@@ -172,7 +180,10 @@ Not allowed:
 
 *Part 2B: [Minimum Viable Customer Delivery](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#6941) · [30/60/90-Day Execution Plan](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#2dca)*
 
-### Success Metric Floors
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 04](/img/articles/part-2a-execution-guide/04-dc0d793157.png)
+
+## Success Metric Floors
 
 Each success metric defined in Activity 7 must meet the following minimum floor requirements. Metrics that do not meet these floors must be revised before Phase 0 exits.
 
@@ -184,7 +195,10 @@ Each success metric defined in Activity 7 must meet the following minimum floor 
 
 A quality reviewer (not the analyst who defined the metrics) must confirm that all success metrics meet these floors before the Phase 0 gate is closed. The quality reviewer's name and confirmation date must be recorded in the Customer Acceptance Record.
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 05](/img/articles/part-2a-execution-guide/05-374f6b40dd.png)
+
+## Validation Tests
 
 - **Scope test:** In-scope and out-of-scope systems are explicitly listed.
 - **Decision test:** At least five customer decisions are documented.
@@ -199,7 +213,10 @@ A quality reviewer (not the analyst who defined the metrics) must confirm that a
 - **Chain integrity:** At least one primary output from this phase (charter, PIR, or Decision) can be traced forward along the Claim-to-Action Chain defined in Part 1 §Claim-to-Action Chain: Source → Claim → Evidence → Assessment → Customer Relevance → Scenario → Observable → Telemetry → Hunt/Detection → Test → SOC Action → Decision → Metric. Outputs that cannot reach at least the **Customer Relevance** node are logged as collection gaps or context items, not closed deliverables.
 
 
-### Repository Setup
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 06](/img/articles/part-2a-execution-guide/06-01f4078181.png)
+
+## Repository Setup
 
 Treat the CTI project as a codebase. Every artifact is a file, every register is a versioned record, every gate evidence pack is a commit-ready bundle. One directory per engagement. Nothing lives in email or chat. Initialize the repository on Day 1 before any analysis begins.
 
@@ -492,7 +509,10 @@ The human CTI lead must confirm that each PIR supports a real customer decision.
 
 *Part 2B tools: [AI Workflow 1: Source Extraction](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#5cac) · [Task Card 1: Source Claim Extraction](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#d978) · [Task Card 2: PIR Quality Challenge](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#3de9) · [Gate A: PIR Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#4723)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 07](/img/articles/part-2a-execution-guide/07-5b4e39d14e.png)
+
+## Validation Tests
 
 - **Decision linkage:** Every PIR names a consumer and decision.
 - **Collection linkage:** Every PIR has at least two SIRs.
@@ -561,7 +581,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 2: Customer Relevance Mapping](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#0bd0) · [Task Card 3: Crown-Jewel Dependency Review](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#5c5c)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 08](/img/articles/part-2a-execution-guide/08-97538466d6.png)
+
+## Validation Tests
 
 - **Owner test:** Every crown jewel has business and technical owners.
 - **Impact test:** Confidentiality, integrity, and availability impacts are documented.
@@ -663,7 +686,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 2: Customer Relevance Mapping](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#0bd0) · [Task Card 4: Telemetry Feasibility Review](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#56c2)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 09](/img/articles/part-2a-execution-guide/09-2a89829865.png)
+
+## Validation Tests
 
 - **Sample-event test:** Each critical log source has inspected sample events.
 - **Field test:** Required fields for priority detections are present and parsed.
@@ -761,7 +787,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 1: Source Extraction](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#5cac) · [Task Card 1: Source Claim Extraction](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#d978)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 10](/img/articles/part-2a-execution-guide/10-d89a557809.png)
+
+## Validation Tests
 
 - **Source-access test:** The source's access is described: telemetry, malware analysis, IR, government statement, or secondary reporting.
 - **Source-rating test:** Every external claim has Source Reliability and Information Credibility ratings and a combined notation code (e.g., B4) recorded in the Source Register. Any claim flagged as AI-generated without traceable primary evidence is rated F6; any traceable underlying source is rated separately on its own merits (see Part 1 §Rating AI-Generated Intelligence).
@@ -859,7 +888,10 @@ Actions:
 Observe / Enrich / Hunt / Detect / Block / Do not use / Expired
 ```
 
-### IOC Emergency Unblock Procedure
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 11](/img/articles/part-2a-execution-guide/11-d0d264f41f.png)
+
+## IOC Emergency Unblock Procedure
 
 An emergency unblock is required when a blocked IOC is generating confirmed false positives that are impacting production operations, or when new intelligence demonstrates the IOC is no longer attributable to threat activity.
 
@@ -964,7 +996,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 3: Threat Scenario Drafting](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#cb61) · [Task Card 5: Threat Scenario Builder](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#066e) · [Gate B: Scenario Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#bb2e)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 12](/img/articles/part-2a-execution-guide/12-367048852a.png)
+
+## Validation Tests
 
 - **Customer relevance:** Scenario maps to at least one crown jewel and PIR.
 - **Evidence support:** Scenario cites validated sources or customer observations.
@@ -1055,7 +1090,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 4: Hunt Hypothesis Generation](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#6852) · [Task Card 6: Hunt Hypothesis Generator](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#4f25) · [Gate C: Hunt Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#603b)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 13](/img/articles/part-2a-execution-guide/13-51a94d6d6d.png)
+
+## Validation Tests
 
 - **Falsifiability:** The hypothesis can be tested and can fail.
 - **Observable test:** Expected observables are defined in available logs.
@@ -1224,7 +1262,10 @@ Use different detection patterns based on the behavior:
 - graph or relationship detection;
 - compound incident rule.
 
-### AI Usage
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 14](/img/articles/part-2a-execution-guide/14-50f3b4a2a0.png)
+
+## AI Usage
 
 Allowed:
 
@@ -1243,7 +1284,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 5: Detection Drafting](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#2ac3) · [Task Card 7: Detection Logic Draft](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#b433) · [Task Card 8: Rule Quality Challenge](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#afbd) · [Gate D: Detection Design Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#e2a1)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 15](/img/articles/part-2a-execution-guide/15-53523fd454.png)
+
+## Validation Tests
 
 - **Logic test:** Rule logic matches the stated behavior and does not drift into unrelated activity.
 - **Field test:** Every field exists, is parsed, and has expected values.
@@ -1338,7 +1382,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 5: Detection Drafting](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#2ac3) · [AI Workflow 6: Query Translation](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#c708) · [Task Card 7: Detection Logic Draft](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#b433)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 16](/img/articles/part-2a-execution-guide/16-4badcd1c49.png)
+
+## Validation Tests
 
 - **Schema test:** Detection file matches required schema.
 - **Metadata test:** Owner, status, severity, confidence, data source, and mapping fields are complete.
@@ -1469,7 +1516,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 7: Test Case Generation](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#ef81) · [Task Card 8: Rule Quality Challenge](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#afbd)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 17](/img/articles/part-2a-execution-guide/17-5a18ce20e4.png)
+
+## Validation Tests
 
 - **Positive evidence:** At least one positive test passes.
 - **Negative evidence:** At least one negative test passes.
@@ -1534,7 +1584,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 8: SOC Playbook Drafting](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#9e25) · [Task Card 9: SOC Playbook Draft](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#21a2)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 18](/img/articles/part-2a-execution-guide/18-1074721f1b.png)
+
+## Validation Tests
 
 - **Analyst usability:** SOC analyst can follow the playbook without CTI context.
 - **Evidence test:** Required evidence fields are available in the alert or linked searches.
@@ -1599,6 +1652,9 @@ Resume criteria:
 Status:
 ```
 
+
+![Part 2A: Phase-by-Phase Execution Guide infographic 19](/img/articles/part-2a-execution-guide/19-9b1cd9841b.png)
+
 ## Phase 11: Pilot Deployment and Tuning
 
 ### Objective
@@ -1631,7 +1687,10 @@ Not allowed:
 
 *Part 2B gate: [Gate E: Production Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#30a9)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 20](/img/articles/part-2a-execution-guide/20-8ee9caf142.png)
+
+## Validation Tests
 
 - **Volume test:** Alert rate is operationally manageable.
 - **Precision review:** False-positive categories are understood and tunable.
@@ -1697,7 +1756,10 @@ Not allowed:
 
 *Part 2B gate: [Gate E: Production Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#30a9) · [30/60/90-Day Execution Plan](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#2dca)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 21](/img/articles/part-2a-execution-guide/21-9534962f59.png)
+
+## Validation Tests
 
 - **Deployment test:** Rule is active in production and firing path is confirmed.
 - **Case creation test:** Alert creates a case or ticket as designed.
@@ -1806,7 +1868,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 9: Report Drafting](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#a3cd) · [Task Card 10: Executive Report Draft](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#a2e7) · [Gate F: Final Delivery Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#3db7) · [Final Customer Delivery Package](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#8805)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 22](/img/articles/part-2a-execution-guide/22-87f5da8f58.png)
+
+## Validation Tests
 
 - **Evidence traceability:** Every key judgment links to evidence or test results.
 - **Decision clarity:** Executive report states decisions needed.
@@ -1871,7 +1936,10 @@ The PIR Feedback Loop is the structured process by which findings from the curre
 - Decision Register updated with final outcomes for answered PIRs
 - Next-cycle PIR set approved by executive sponsor
 
-### Metrics
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 23](/img/articles/part-2a-execution-guide/23-8d2cc60a61.png)
+
+## Metrics
 
 Minimum required metrics:
 
@@ -1937,7 +2005,10 @@ Not allowed:
 
 *Part 2B tools: [AI Workflow 10: Quality Review](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#78a9) · [Gate F: Final Delivery Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#3db7)*
 
-### Validation Tests
+#
+![Part 2A: Phase-by-Phase Execution Guide infographic 24](/img/articles/part-2a-execution-guide/24-d567b6544a.png)
+
+## Validation Tests
 
 - **Outcome test:** Metrics show defensive improvement.
 - **Feedback test:** SOC and platform-owner feedback is incorporated.
@@ -2090,6 +2161,9 @@ Every weekly project checkpoint must review:
 
 
 ---
+
+
+![Part 2A: Phase-by-Phase Execution Guide infographic 25](/img/articles/part-2a-execution-guide/25-92a512ab39.png)
 
 ## References
 
