@@ -12,6 +12,7 @@ https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 .
 ├── .github/workflows/deploy.yml
 ├── content/medium/
+│   ├── image-manifest.json
 │   ├── customer-driven-ai-cti-project-workflow.md
 │   ├── customer-driven-ai-cti-project-template-part1.md
 │   ├── customer-driven-ai-cti-project-template-part2a.md
@@ -19,6 +20,7 @@ https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 │   └── customer-driven-ai-cti-project-template-complete.md
 ├── docs/
 │   ├── intro.md
+│   ├── infographics.md
 │   ├── published-articles.md
 │   ├── methodology/
 │   │   ├── foundations.md
@@ -28,7 +30,10 @@ https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 │   └── workflow/
 │       └── full-workflow-quick-reference.md
 ├── src/
+├── scripts/
+│   └── import_medium_images.py
 ├── static/
+│   └── img/articles/
 ├── docusaurus.config.ts
 ├── package.json
 └── sidebars.ts
@@ -54,6 +59,14 @@ npm start
 npm run typecheck
 npm run build
 ```
+
+## Import Medium Images
+
+```bash
+python3 scripts/import_medium_images.py
+```
+
+The importer reads the public Medium RSS feed, downloads article images into `static/img/articles/`, writes `content/medium/image-manifest.json`, and regenerates `docs/infographics.md`.
 
 ## GitHub Pages
 

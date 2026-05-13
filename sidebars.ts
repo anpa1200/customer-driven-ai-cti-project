@@ -16,6 +16,7 @@ const sidebars: SidebarsConfig = {
   docsSidebar: [
     'intro',
     'published-articles',
+    'infographics',
     {
       type: 'category',
       label: 'Workflow',
