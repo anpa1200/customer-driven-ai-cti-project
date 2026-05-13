@@ -6,11 +6,18 @@ Published project entry point:
 
 https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 
+Current release: `v1.0.0`
+
 ## Repository Structure
 
 ```text
 .
 ├── .github/workflows/deploy.yml
+├── .github/workflows/validate.yml
+├── CHANGELOG.md
+├── DEPRECATED.md
+├── ROADMAP.md
+├── VERSION
 ├── content/medium/
 │   ├── image-manifest.json
 │   ├── customer-driven-ai-cti-project-workflow.md
@@ -22,6 +29,8 @@ https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 │   ├── intro.md
 │   ├── infographics.md
 │   ├── published-articles.md
+│   ├── project-governance/
+│   ├── standard/
 │   ├── methodology/
 │   │   ├── foundations.md
 │   │   ├── phase-by-phase-execution-guide.md
@@ -32,12 +41,15 @@ https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 │       └── full-workflow-quick-reference.md
 ├── examples/
 │   ├── datasets/
+│   ├── attack-mappings/
 │   ├── gates/
+│   ├── json/
 │   ├── queries/
 │   ├── registers/
 │   ├── replay/
 │   ├── reports/
 │   ├── rules/
+│   ├── schemas/
 │   └── scenarios/
 ├── src/
 ├── scripts/
@@ -68,8 +80,9 @@ npm start
 ## Validation
 
 ```bash
-npm run typecheck
+npm install
 npm run validate:examples
+npm run typecheck
 npm run build
 ```
 
@@ -87,6 +100,15 @@ Included:
 - Gate A-F evidence packs
 - workflow output screenshots
 - one complete case from PIR to detection, pilot, and executive report
+
+## Standard-Like Features
+
+- semantic versioning with `VERSION`, `CHANGELOG.md`, `ROADMAP.md`, and `DEPRECATED.md`
+- normative language profile using MUST, SHOULD, MAY, REQUIRED, and OPTIONAL
+- JSON Schemas and JSON examples
+- ATT&CK and D3FEND mapping example
+- telemetry schema mapping to ECS-style and OCSF-style fields
+- CI validation workflow for examples, typecheck, and Docusaurus build
 
 ## Import Medium Images
 

@@ -1,0 +1,30 @@
+detection_id: DET-001
+title: Privileged MFA Change Followed by Backup Deletion Attempt
+attack:
+  tactic:
+    id: TA0003
+    name: Persistence
+  technique:
+    id: T1098
+    name: Account Manipulation
+  related_techniques:
+    - id: T1485
+      name: Data Destruction
+    - id: T1490
+      name: Inhibit System Recovery
+d3fend:
+  defensive_techniques:
+    - id: D3-AM
+      name: Account Monitoring
+    - id: D3-LAM
+      name: Log Analysis
+    - id: D3-CAM
+      name: Cloud Account Monitoring
+data_sources:
+  - Entra ID Audit Log
+  - Azure Activity Log
+  - Microsoft Sentinel Analytics
+validation:
+  replay_dataset: examples/datasets/cloud_identity_events.csv
+  replay_result: examples/replay/replay-result.json
+  gate: Gate E

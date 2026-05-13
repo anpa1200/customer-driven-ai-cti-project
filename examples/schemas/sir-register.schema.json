@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anpa1200.github.io/customer-driven-ai-cti-project/schemas/sir-register.schema.json",
+  "title": "SIR Register Row",
+  "type": "object",
+  "required": [
+    "sir_id",
+    "pir_id",
+    "question",
+    "data_source",
+    "evidence_type",
+    "owner",
+    "due_date",
+    "status"
+  ],
+  "properties": {
+    "sir_id": {"type": "string", "pattern": "^SIR-[0-9]{3}$"},
+    "pir_id": {"type": "string", "pattern": "^PIR-[0-9]{3}$"},
+    "question": {"type": "string", "minLength": 1},
+    "data_source": {"type": "string", "minLength": 1},
+    "evidence_type": {"type": "string", "minLength": 1},
+    "owner": {"type": "string", "minLength": 1},
+    "due_date": {"type": "string", "format": "date"},
+    "status": {"type": "string", "enum": ["Open", "Closed", "Deferred", "Blocked"]}
+  }
+}

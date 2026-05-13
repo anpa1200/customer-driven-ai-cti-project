@@ -1,0 +1,9 @@
+{
+  "pir_id": "PIR-001",
+  "decision_owner": "CISO",
+  "decision": "Prioritize a cloud identity detection sprint",
+  "question": "Are privileged cloud identities being used in a way that could enable backup deletion before ransomware deployment?",
+  "time_horizon": "30 days",
+  "status": "Approved",
+  "confidence_threshold": "Moderate"
+}

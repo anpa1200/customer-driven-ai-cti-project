@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -67,6 +68,15 @@ REQUIRED_FILES = [
     "examples/gates/gate-e-production-approval.md",
     "examples/gates/gate-f-final-delivery-approval.md",
     "examples/reports/executive-report.md",
+    "examples/schemas/pir-register.schema.json",
+    "examples/schemas/sir-register.schema.json",
+    "examples/schemas/detection-backlog.schema.json",
+    "examples/schemas/telemetry-event.schema.json",
+    "examples/attack-mappings/det-001-attack-d3fend.yaml",
+    "examples/json/pir-register.example.json",
+    "examples/json/detection.example.json",
+    "examples/json/telemetry-event.example.json",
+    "examples/telemetry-schema.md",
     "static/img/workflow-output/01-register-dashboard.svg",
     "static/img/workflow-output/02-replay-output.svg",
     "static/img/workflow-output/03-gate-status.svg",
@@ -119,6 +129,44 @@ def validate_queries() -> None:
         fail("SPL query must include MFA and backup deletion predicates")
 
 
+def validate_json_examples() -> None:
+    pairs = [
+        ("examples/json/pir-register.example.json", "pir_id", r"^PIR-[0-9]{3}$"),
+        ("examples/json/detection.example.json", "detection_id", r"^DET-[0-9]{3}$"),
+        ("examples/json/telemetry-event.example.json", "correlation_id", r"^CORR-[0-9]{4}$"),
+    ]
+    for rel_path, key, pattern in pairs:
+        data = json.loads((ROOT / rel_path).read_text(encoding="utf-8"))
+        if key not in data:
+            fail(f"{rel_path} missing key: {key}")
+        if not re.match(pattern, str(data[key])):
+            fail(f"{rel_path} key {key} does not match {pattern}")
+
+
+def validate_attack_mapping() -> None:
+    mapping = (ROOT / "examples/attack-mappings/det-001-attack-d3fend.yaml").read_text(encoding="utf-8")
+    for token in ["detection_id: DET-001", "id: T1098", "id: T1490", "d3fend:", "data_sources:"]:
+        if token not in mapping:
+            fail(f"ATT&CK/D3FEND mapping missing token: {token}")
+
+
+def validate_dataset_cross_references() -> None:
+    pir_ids = set()
+    with (ROOT / "examples/registers/pir-register.csv").open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            pir_ids.add(row["pir_id"])
+
+    with (ROOT / "examples/registers/sir-register.csv").open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            if row["pir_id"] not in pir_ids:
+                fail(f"SIR references missing PIR: {row['sir_id']} -> {row['pir_id']}")
+
+    with (ROOT / "examples/datasets/cloud_identity_events.csv").open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+    if not any(row["operation"] == "Microsoft.RecoveryServices/vaults/delete" for row in rows):
+        fail("dataset must include a backup vault deletion event")
+
+
 def validate_replay_result() -> None:
     result_path = ROOT / "examples/replay/replay-result.json"
     if not result_path.exists():
@@ -133,6 +181,9 @@ def main() -> None:
     validate_csv_headers()
     validate_sigma()
     validate_queries()
+    validate_json_examples()
+    validate_attack_mapping()
+    validate_dataset_cross_references()
     validate_replay_result()
     print("Example artifact validation passed.")
 

@@ -1,0 +1,11 @@
+{
+  "detection_id": "DET-001",
+  "title": "Privileged MFA Change Followed by Backup Deletion Attempt",
+  "scenario_id": "SCN-001",
+  "technique": "T1098",
+  "data_source": "Entra ID Audit Log + Azure Activity",
+  "drl": 8,
+  "status": "Pilot passed",
+  "owner": "Detection Engineer",
+  "priority": "High"
+}

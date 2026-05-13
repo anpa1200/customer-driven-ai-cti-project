@@ -1,0 +1,10 @@
+{
+  "event_time_utc": "2026-05-01T08:21:40Z",
+  "event_source": "AzureActivity",
+  "user": "admin.riley@meridian.example",
+  "src_ip": "198.51.100.22",
+  "operation": "Microsoft.RecoveryServices/vaults/delete",
+  "target": "rg-prod-backup",
+  "result": "Failed",
+  "correlation_id": "CORR-1001"
+}

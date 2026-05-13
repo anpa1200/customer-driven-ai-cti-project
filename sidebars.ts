@@ -19,6 +19,28 @@ const sidebars: SidebarsConfig = {
     'infographics',
     {
       type: 'category',
+      label: 'Project Governance',
+      collapsed: false,
+      items: [
+        'project-governance/versioning',
+        'project-governance/changelog',
+        'project-governance/roadmap',
+        'project-governance/deprecated',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Standard',
+      collapsed: false,
+      items: [
+        'standard/normative-language',
+        'standard/artifact-contracts',
+        'standard/schemas-and-validation',
+        'standard/attack-mappings',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Workflow',
       collapsed: false,
       items: ['workflow/full-workflow-quick-reference'],
