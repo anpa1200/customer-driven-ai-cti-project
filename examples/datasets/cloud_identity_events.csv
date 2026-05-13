@@ -1,0 +1,9 @@
+event_time_utc,event_source,user,src_ip,operation,target,result,correlation_id
+2026-05-01T08:10:00Z,EntraIDSignin,admin.riley@meridian.example,198.51.100.22,InteractiveUserSignIn,Azure Portal,Success,CORR-1001
+2026-05-01T08:14:22Z,EntraIDAudit,admin.riley@meridian.example,198.51.100.22,Add authentication method,Global Administrator,Success,CORR-1001
+2026-05-01T08:17:03Z,AzureActivity,admin.riley@meridian.example,198.51.100.22,Microsoft.RecoveryServices/vaults/read,rg-prod-backup,Success,CORR-1001
+2026-05-01T08:19:51Z,AzureActivity,admin.riley@meridian.example,198.51.100.22,Microsoft.RecoveryServices/vaults/backupconfig/write,rg-prod-backup,Success,CORR-1001
+2026-05-01T08:21:40Z,AzureActivity,admin.riley@meridian.example,198.51.100.22,Microsoft.RecoveryServices/vaults/delete,rg-prod-backup,Failed,CORR-1001
+2026-05-01T10:02:11Z,EntraIDAudit,admin.chen@meridian.example,203.0.113.9,Add authentication method,Global Administrator,Success,CORR-2001
+2026-05-01T15:42:00Z,AzureActivity,svc.backup@meridian.example,10.20.4.15,Microsoft.RecoveryServices/vaults/read,rg-prod-backup,Success,CORR-3001
+2026-05-02T09:15:31Z,AzureActivity,admin.chen@meridian.example,203.0.113.9,Microsoft.Compute/virtualMachines/write,rg-dev,Success,CORR-2002

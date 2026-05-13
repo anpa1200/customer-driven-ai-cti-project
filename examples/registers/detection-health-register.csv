@@ -1,0 +1,4 @@
+date_utc,detection_id,environment,alerts,true_positive,false_positive,precision,notes
+2026-05-06,DET-001,pilot,3,1,2,0.33,Two admin maintenance events tuned by excluding approved change window
+2026-05-07,DET-001,pilot,1,1,0,1.00,Replay positive detected
+2026-05-08,DET-001,pilot,0,0,0,undefined,No alerts during monitoring window

@@ -1,0 +1,36 @@
+// Synthetic Microsoft Sentinel KQL example for the Meridian Freight Group worked case.
+// Detects privileged MFA method changes followed by backup vault deletion activity within 2 hours.
+
+let lookback = 1d;
+let window = 2h;
+let privilegedMfaChanges =
+    AuditLogs
+    | where TimeGenerated > ago(lookback)
+    | where OperationName has_any ("Add authentication method", "Update user", "StrongAuthenticationMethod")
+    | where tostring(TargetResources) has_any ("Global Administrator", "Privileged Role Administrator")
+    | extend Actor = tostring(InitiatedBy.user.userPrincipalName)
+    | project MfaTime = TimeGenerated, Actor, OperationName, TargetResources, CorrelationId;
+let backupDeletionActivity =
+    AzureActivity
+    | where TimeGenerated > ago(lookback)
+    | where OperationNameValue has_any (
+        "Microsoft.RecoveryServices/vaults/delete",
+        "Microsoft.RecoveryServices/vaults/backupconfig/write",
+        "Microsoft.DataProtection/backupVaults/delete"
+    )
+    | extend Actor = tostring(Caller)
+    | project BackupTime = TimeGenerated, Actor, OperationNameValue, ResourceGroup, ResourceId, ActivityStatusValue, CorrelationId;
+privilegedMfaChanges
+| join kind=innerunique backupDeletionActivity on Actor
+| where BackupTime between (MfaTime .. MfaTime + window)
+| project
+    AlertName = "Privileged MFA Change Followed by Backup Deletion Attempt",
+    Actor,
+    MfaTime,
+    BackupTime,
+    OperationName,
+    OperationNameValue,
+    ResourceGroup,
+    ResourceId,
+    ActivityStatusValue,
+    CorrelationId

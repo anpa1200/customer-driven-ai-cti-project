@@ -27,14 +27,25 @@ https://medium.com/@1200km/customer-driven-ai-cti-project-c0db3cdc1830
 │   │   ├── phase-by-phase-execution-guide.md
 │   │   ├── reference-toolkit.md
 │   │   └── complete-template.md
+│   ├── practitioner-package/
 │   └── workflow/
 │       └── full-workflow-quick-reference.md
+├── examples/
+│   ├── datasets/
+│   ├── gates/
+│   ├── queries/
+│   ├── registers/
+│   ├── replay/
+│   ├── reports/
+│   ├── rules/
+│   └── scenarios/
 ├── src/
 ├── scripts/
 │   ├── embed_article_images.py
-│   └── import_medium_images.py
+│   ├── import_medium_images.py
+│   └── validate_examples.py
 ├── static/
-│   └── img/articles/
+│   └── img/
 ├── docusaurus.config.ts
 ├── package.json
 └── sidebars.ts
@@ -58,8 +69,24 @@ npm start
 
 ```bash
 npm run typecheck
+npm run validate:examples
 npm run build
 ```
+
+## Practitioner Package
+
+The repository includes a fully synthetic worked example under `examples/` and matching Docusaurus documentation under `docs/practitioner-package/`.
+
+Included:
+
+- sample registers in CSV and Markdown
+- example Sigma rule
+- example Microsoft Sentinel KQL and Splunk SPL queries
+- fake customer scenario
+- test dataset and replay script
+- Gate A-F evidence packs
+- workflow output screenshots
+- one complete case from PIR to detection, pilot, and executive report
 
 ## Import Medium Images
 

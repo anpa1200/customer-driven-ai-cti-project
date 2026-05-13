@@ -1,0 +1,16 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#0f1720"/>
+  <text x="56" y="72" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">Replay Output</text>
+  <rect x="56" y="116" width="1168" height="520" rx="8" fill="#071018" stroke="#83c5be"/>
+  <text x="88" y="170" fill="#83c5be" font-family="Courier New" font-size="22">{</text>
+  <text x="120" y="214" fill="#ffffff" font-family="Courier New" font-size="22">"dataset": "examples/datasets/cloud_identity_events.csv",</text>
+  <text x="120" y="258" fill="#ffffff" font-family="Courier New" font-size="22">"event_count": 8,</text>
+  <text x="120" y="302" fill="#ffffff" font-family="Courier New" font-size="22">"alert_count": 1,</text>
+  <text x="120" y="346" fill="#ffffff" font-family="Courier New" font-size="22">"actor": "admin.riley@meridian.example",</text>
+  <text x="120" y="390" fill="#ffffff" font-family="Courier New" font-size="22">"matched_operations": [</text>
+  <text x="156" y="434" fill="#ffffff" font-family="Courier New" font-size="22">"Microsoft.RecoveryServices/vaults/backupconfig/write",</text>
+  <text x="156" y="478" fill="#ffffff" font-family="Courier New" font-size="22">"Microsoft.RecoveryServices/vaults/delete"</text>
+  <text x="120" y="522" fill="#ffffff" font-family="Courier New" font-size="22">],</text>
+  <text x="120" y="566" fill="#ffffff" font-family="Courier New" font-size="22">"result": "detected"</text>
+  <text x="88" y="610" fill="#83c5be" font-family="Courier New" font-size="22">}</text>
+</svg>

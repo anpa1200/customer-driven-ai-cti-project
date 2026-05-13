@@ -20,6 +20,7 @@ The methodology is built for CTI engagements that must move beyond reporting int
 4. [Part 2B: Reference Toolkit](/docs/methodology/reference-toolkit) for AI workflows, LLM task cards, quality gates, registers, and worked examples.
 5. [Complete Template](/docs/methodology/complete-template) when you need the single-file source version.
 6. [Infographics](/docs/infographics) for the imported visual assets from the published Medium articles.
+7. [Practitioner Package](/docs/practitioner-package) for sample registers, rules, queries, replay data, gate packs, and a complete worked case.
 
 ## Published Articles
 

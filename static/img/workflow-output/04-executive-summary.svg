@@ -1,0 +1,11 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#f7f9fa"/>
+  <text x="56" y="76" fill="#101820" font-family="Arial" font-size="34" font-weight="700">Executive Summary Output</text>
+  <rect x="56" y="120" width="1168" height="500" rx="8" fill="#ffffff" stroke="#d8e1e3"/>
+  <text x="92" y="178" fill="#006d77" font-family="Arial" font-size="28" font-weight="700">Decision</text>
+  <text x="92" y="224" fill="#101820" font-family="Arial" font-size="22">Prioritize cloud identity detection sprint for backup-destruction risk.</text>
+  <text x="92" y="296" fill="#006d77" font-family="Arial" font-size="28" font-weight="700">Outcome</text>
+  <text x="92" y="342" fill="#101820" font-family="Arial" font-size="22">DET-001 reached DRL-8 after replay and pilot validation.</text>
+  <text x="92" y="414" fill="#006d77" font-family="Arial" font-size="28" font-weight="700">Recommendation</text>
+  <text x="92" y="460" fill="#101820" font-family="Arial" font-size="22">Move to monitor-only production for 7 days, then standard SOC escalation.</text>
+</svg>

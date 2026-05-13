@@ -1,0 +1,18 @@
+{
+  "dataset": "examples/datasets/cloud_identity_events.csv",
+  "event_count": 8,
+  "alert_count": 1,
+  "alerts": [
+    {
+      "alert_name": "Privileged MFA Change Followed by Backup Deletion Attempt",
+      "actor": "admin.riley@meridian.example",
+      "mfa_time_utc": "2026-05-01T08:14:22Z",
+      "matched_operations": [
+        "Microsoft.RecoveryServices/vaults/backupconfig/write",
+        "Microsoft.RecoveryServices/vaults/delete"
+      ],
+      "correlation_id": "CORR-1001",
+      "result": "detected"
+    }
+  ]
+}

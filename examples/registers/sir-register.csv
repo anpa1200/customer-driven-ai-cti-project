@@ -1,0 +1,4 @@
+sir_id,pir_id,question,data_source,evidence_type,owner,due_date,status
+SIR-001,PIR-001,Which privileged identities changed MFA settings before backup-resource activity?,Entra ID Audit Log,Audit event correlation,CTI Analyst,2026-05-03,Closed
+SIR-002,PIR-001,Did any privileged session enumerate or modify backup vaults?,Azure Activity Log,Management operation sequence,Detection Engineer,2026-05-03,Closed
+SIR-003,PIR-001,Can Sentinel detect the sequence with acceptable false-positive risk?,Microsoft Sentinel,Replay result and pilot telemetry,SOC Lead,2026-05-10,Closed

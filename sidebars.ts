@@ -34,6 +34,21 @@ const sidebars: SidebarsConfig = {
         'methodology/complete-template',
       ],
     },
+    {
+      type: 'category',
+      label: 'Practitioner Package',
+      collapsed: false,
+      items: [
+        'practitioner-package/package-index',
+        'practitioner-package/fake-customer-scenario',
+        'practitioner-package/sample-registers',
+        'practitioner-package/detection-artifacts',
+        'practitioner-package/replay-example',
+        'practitioner-package/gate-evidence-packs',
+        'practitioner-package/workflow-output-screenshots',
+        'practitioner-package/complete-worked-case',
+      ],
+    },
   ],
 };
 

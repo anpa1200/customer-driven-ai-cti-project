@@ -1,0 +1,18 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#101820"/>
+  <text x="56" y="72" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">Meridian Freight Group - Register Dashboard</text>
+  <rect x="56" y="118" width="1168" height="500" rx="8" fill="#ffffff"/>
+  <text x="88" y="172" fill="#006d77" font-family="Arial" font-size="26" font-weight="700">PIR-001: Cloud identity risk to backup recovery</text>
+  <g font-family="Arial" font-size="22">
+    <text x="88" y="238" fill="#101820">Evidence Register</text>
+    <text x="430" y="238" fill="#101820">4 accepted evidence items</text>
+    <text x="88" y="302" fill="#101820">SIR Register</text>
+    <text x="430" y="302" fill="#101820">3 closed SIRs</text>
+    <text x="88" y="366" fill="#101820">Detection Backlog</text>
+    <text x="430" y="366" fill="#101820">DET-001 at DRL-8</text>
+    <text x="88" y="430" fill="#101820">Detection Health</text>
+    <text x="430" y="430" fill="#101820">Pilot complete, tuning documented</text>
+  </g>
+  <rect x="88" y="500" width="360" height="70" rx="6" fill="#006d77"/>
+  <text x="118" y="545" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Gate F: PASS</text>
+</svg>

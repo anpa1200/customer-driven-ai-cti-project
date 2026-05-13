@@ -1,0 +1,15 @@
+index=cloud sourcetype IN ("azure:aad:audit", "azure:activity")
+| eval actor=coalesce(userPrincipalName, Caller, user)
+| eval is_mfa_change=if(match(OperationName, "Add authentication method|Update user|StrongAuthenticationMethod"), 1, 0)
+| eval is_backup_delete=if(match(OperationNameValue, "Microsoft\\.RecoveryServices/vaults/delete|Microsoft\\.DataProtection/backupVaults/delete|backupconfig/write"), 1, 0)
+| stats
+    min(_time) as first_time
+    max(_time) as last_time
+    values(OperationName) as mfa_operations
+    values(OperationNameValue) as backup_operations
+    values(ResourceId) as resources
+    max(is_mfa_change) as saw_mfa_change
+    max(is_backup_delete) as saw_backup_delete
+  by actor
+| where saw_mfa_change=1 AND saw_backup_delete=1 AND last_time-first_time<=7200
+| convert ctime(first_time) ctime(last_time)

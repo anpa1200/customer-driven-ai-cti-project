@@ -12,6 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "validate:examples": "python3 scripts/validate_examples.py && python3 examples/replay/replay-cloud-identity.py",
     "typecheck": "tsc"
   },
   "dependencies": {

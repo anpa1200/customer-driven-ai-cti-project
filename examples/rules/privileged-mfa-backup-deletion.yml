@@ -1,0 +1,36 @@
+title: Privileged MFA Change Followed By Backup Deletion Attempt
+id: 6f0d3a5c-04f1-4f3c-a708-7f94b8207b8d
+status: test
+description: Detects a privileged identity MFA change followed by suspicious backup vault deletion or protection weakening activity.
+references:
+  - https://attack.mitre.org/techniques/T1098/
+author: Andrey Pautov
+date: 2026-05-13
+tags:
+  - attack.persistence
+  - attack.t1098
+  - cloud.identity
+logsource:
+  product: azure
+  service: auditlogs
+detection:
+  mfa_change:
+    OperationName|contains:
+      - Add authentication method
+      - Update user
+      - StrongAuthenticationMethod
+    TargetResources|contains:
+      - Global Administrator
+      - Privileged Role Administrator
+  backup_delete:
+    OperationName|contains:
+      - Delete Backup Vault
+      - Backup Vault Delete
+      - Microsoft.RecoveryServices/vaults/delete
+      - Disable soft delete
+  timeframe: 2h
+  condition: mfa_change followed_by backup_delete
+falsepositives:
+  - Approved cloud administrator MFA reset during a documented change window
+  - Backup vault decommissioning with ticketed approval
+level: high

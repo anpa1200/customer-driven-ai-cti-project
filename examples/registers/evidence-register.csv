@@ -1,0 +1,5 @@
+evidence_id,date_utc,source_id,source_type,claim,artifact,admiralty_rating,confidence,owner,status
+EV-001,2026-05-01T08:14:22Z,SRC-001,Entra ID Audit Log,Privileged user registered a new MFA method,cloud_identity_events.csv row 2,A2,High,CTI Lead,Accepted
+EV-002,2026-05-01T08:21:40Z,SRC-002,Azure Activity Log,Backup vault deletion was attempted,cloud_identity_events.csv row 6,A2,High,Detection Engineer,Accepted
+EV-003,2026-05-01T08:23:18Z,SRC-003,Sentinel Analytics,Detection fired for cloud backup deletion sequence,replay-result.json,A2,High,SOC Lead,Accepted
+EV-004,2026-05-01T09:10:00Z,SRC-004,Human Review,Gate E production approval granted with pilot conditions,gate-e-production-approval.md,B2,Moderate,CISO Delegate,Accepted
