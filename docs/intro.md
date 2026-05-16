@@ -14,6 +14,13 @@ The methodology is built for CTI engagements that must move beyond reporting int
 
 Current release: **v1.0.0**
 
+## CTI Ecosystem
+
+This project is the delivery and quality-gate layer of a three-book CTI ecosystem. Use [CTI Project Ecosystem](/docs/ecosystem) to navigate between the books.
+
+- [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) provides the underlying analyst tradecraft.
+- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) provides sector-specific actor, TTP, tool, hunt, and detection examples.
+
 ## Reading Order
 
 1. [Versioning](/docs/project-governance/versioning) for release status and compatibility rules.
