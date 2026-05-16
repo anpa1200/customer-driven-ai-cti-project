@@ -24,6 +24,7 @@ This project uses requirement keywords to make the methodology standard-like and
 - Every SIR **MUST** define data source, evidence type, owner, due date, and closure condition.
 - AI-generated content **MUST NOT** be accepted as evidence without traceable source material.
 - Every detection **MUST** name required telemetry, mapped behavior, owner, test plan, and rollback path.
+- ATT&CK mappings are behavior-backed: detections **MUST NOT** force a technique when evidence does not support one.
 - Every gate decision **MUST** include accepted evidence, blockers, and approval owner.
 - Production promotion **MUST** require replay or pilot evidence.
 

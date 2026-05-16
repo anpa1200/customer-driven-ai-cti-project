@@ -10,7 +10,7 @@ description: Docusaurus documentation site for a customer-driven, AI-assisted cy
 
 This repository packages the published Customer-Driven AI CTI Project article series as a Docusaurus-ready documentation site.
 
-The methodology is built for CTI engagements that must move beyond reporting into defensible customer outcomes: intelligence requirements, evidence handling, source validation, threat scenarios, hunt hypotheses, detection engineering, SOC handoff, executive reporting, and measurable improvement.
+The methodology is built for CTI engagements that must move beyond reporting into defensible customer outcomes: [intelligence requirements](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/), [evidence handling](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/evidence-labels/), source validation, threat scenarios, [hunt hypotheses](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-to-detection/hunting-hypothesis-template/), [detection engineering](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-to-detection/intelligence-to-detection/), [SOC handoff](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-to-detection/soc-handoff/), executive reporting, and measurable improvement.
 
 Current release: **v1.0.0**
 

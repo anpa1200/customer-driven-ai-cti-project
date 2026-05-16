@@ -10,7 +10,7 @@ description: End-to-end quick reference for the Customer-Driven AI CTI Project w
 
 ![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 01](/img/articles/workflow/01-5961f199fd.png)
 
-Most cyber threat intelligence programs fail at the same point: they produce reports nobody uses. The analyst delivers a threat summary; the SOC ignores it; the CISO asks why the budget exists. The gap is not effort — it is structure. Intelligence that cannot be traced from a customer decision all the way to a fired detection rule, a tuned alert, and a measurable outcome is not intelligence. It is research.
+Most cyber threat intelligence programs fail at the same point: they produce reports nobody uses. For the underlying tradecraft standard, start with the [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/). The analyst delivers a threat summary; the SOC ignores it; the CISO asks why the budget exists. The gap is not effort — it is structure. Intelligence that cannot be traced from a customer decision all the way to a fired detection rule, a tuned alert, and a measurable outcome is not intelligence. It is research.
 
 This project template exists to close that gap. It is a 15-phase, gate-controlled methodology for delivering CTI that ends in production detections, executive metrics, and a customer who can articulate exactly what changed in their security posture. AI accelerates every phase — source extraction, hypothesis generation, detection drafting, report writing — but the methodology enforces analytic discipline that no AI can shortcut: source rating, evidence labeling, confidence calibration, quality gate sign-off, and chain integrity from the first PIR to the last deliverable.
 
@@ -60,7 +60,7 @@ Create a professional flat-design infographic titled "Phase 0: Project Charter a
 
 ![Customer-Driven AI CTI Project: Full Workflow Quick Reference infographic 03](/img/articles/workflow/03-3f76a979b2.png)
 
-## Phase 1: Customer Decision and PIR Definition
+## Phase 1: Customer Decision and [PIR Definition](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/)
 
 → [Full phase guide](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2a-phase-by-phase-execution-guide-f9751a8bcb59#d57a)
 

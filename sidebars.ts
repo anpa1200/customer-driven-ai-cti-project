@@ -16,6 +16,7 @@ const sidebars: SidebarsConfig = {
   docsSidebar: [
     'intro',
     'ecosystem',
+    'fact-correlation',
     'published-articles',
     'infographics',
     {

@@ -25,6 +25,11 @@ The worked case includes a concrete mapping file:
 
 ## Mapping Rules
 
-- Every detection **MUST** map to at least one ATT&CK technique.
-- Every production candidate **SHOULD** map to at least one defensive countermeasure.
+- Every detection **MUST** name the behavior it detects and the evidence supporting that behavior.
+- A detection **SHOULD** map to an ATT&CK technique only when the behavior and source evidence support the mapping.
+- A detection **MUST NOT** force an ATT&CK technique to satisfy a coverage table.
+- If no defensible ATT&CK mapping exists, the detection **MUST** state `ATT&CK mapping: Gap / Not mapped` and explain why.
+- Every production candidate **SHOULD** map to at least one defensive countermeasure when a defensible mapping exists.
 - Mapping confidence **MUST** be documented when the technique is inferred rather than directly observed.
+
+For the tradecraft standard behind this rule, use the Field Manual pages on [ATT&CK as a working tool](https://anpa1200.github.io/cti-analyst-field-manual/docs/frameworks/mitre-attack-as-working-tool/) and [ATT&CK mapping mistakes](https://anpa1200.github.io/cti-analyst-field-manual/docs/frameworks/attck-mapping-mistakes/). For actor-specific examples, use the Israel CTI [TTP To Detection Matrix](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/ttp-detection-matrix/).
