@@ -31,7 +31,6 @@ This project is the delivery and quality-gate layer of a three-book CTI ecosyste
 6. [Part 2B: Reference Toolkit](/docs/methodology/reference-toolkit) for AI workflows, LLM task cards, quality gates, registers, and worked examples.
 7. [Practitioner Package](/docs/practitioner-package) for sample registers, rules, queries, replay data, gate packs, and a complete worked case.
 8. [Complete Worked Case](/docs/practitioner-package/complete-worked-case) for one full PIR-to-detection-to-executive-report flow.
-9. [Infographics](/docs/infographics) for the imported visual assets from the published Medium articles.
 
 ## Published Articles
 
