@@ -72,12 +72,13 @@ const config: Config = {
         {to: '/docs/ecosystem', label: 'Ecosystem', position: 'left'},
         {to: '/docs/published-articles', label: 'Articles', position: 'left'},
         {
-          label: 'CTI Books',
+          label: 'Projects',
           position: 'right',
           items: [
             {label: 'Field Manual', href: 'https://anpa1200.github.io/cti-analyst-field-manual/'},
             {label: 'Customer-Driven AI CTI', href: 'https://anpa1200.github.io/customer-driven-ai-cti-project/'},
             {label: 'Israel Threat Actors CTI', href: 'https://anpa1200.github.io/israel-government-threat-actors-cti/'},
+            {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
           ],
         },
         {
@@ -117,11 +118,12 @@ const config: Config = {
           ],
         },
         {
-          title: 'CTI Ecosystem',
+          title: 'Ecosystem',
           items: [
             {label: 'Field Manual', href: 'https://anpa1200.github.io/cti-analyst-field-manual/'},
             {label: 'Customer-Driven AI CTI', href: 'https://anpa1200.github.io/customer-driven-ai-cti-project/'},
             {label: 'Israel Threat Actors CTI', href: 'https://anpa1200.github.io/israel-government-threat-actors-cti/'},
+            {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
           ],
         },
         {
