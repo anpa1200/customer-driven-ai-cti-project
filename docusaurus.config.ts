@@ -59,8 +59,8 @@ const config: Config = {
     navbar: {
       title: 'AI CTI Project',
       logo: {
-        alt: 'AI CTI Project Logo',
-        src: 'img/logo.svg',
+        alt: '1200km',
+        src: 'img/logo.png',
       },
       items: [
         {
