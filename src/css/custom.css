@@ -25,7 +25,7 @@
 .markdown table {
   display: table;
   width: 100%;
-
+}
 
 /* ── Cyber background: visible on every doc page in dark mode ── */
 html[data-theme="dark"] {
