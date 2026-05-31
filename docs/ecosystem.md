@@ -9,6 +9,8 @@ This page connects the Customer-Driven AI CTI Project to the broader CTI documen
 | Project | Role | Use When You Need |
 | --- | --- | --- |
 | [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) | General CTI tradecraft and analyst operating manual | PIR/SIR/EEI, evidence discipline, source reliability, attribution, infrastructure pivoting, actor profiling, hunt hypotheses, detection handoff |
+| [CTI as a Code](https://anpa1200.github.io/CTI_as_a_Code/) | Lab platform and investigation scaffolds | Hands-on lab exercises, reactive/proactive/full-cycle templates, and 8 training assignments with evidence data and worked solutions |
+| [Operation Desert Hydra](https://anpa1200.github.io/operation-desert-hydra/) | Complete CTI-to-detection pipeline reference | Worked example of the full engagement pipeline: source gathering, structured procedures, OpenCTI knowledge graph, detection records, and validated coverage |
 | [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, acceptance criteria, AI-assisted controls, replay, reporting, and customer delivery artifacts |
 | [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israel-focused actors, tools, TTPs, detections, hunts, evidence registers, and source tracking |
 | [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
@@ -36,6 +38,8 @@ Use [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-gove
 ## Repository Links
 
 - [CTI Analyst Field Manual repository](https://github.com/anpa1200/cti-analyst-field-manual)
+- [CTI as a Code repository](https://github.com/anpa1200/CTI_as_a_Code)
+- [Operation Desert Hydra repository](https://github.com/anpa1200/operation-desert-hydra)
 - [Customer-Driven AI CTI Project repository](https://github.com/anpa1200/customer-driven-ai-cti-project)
 - [Israel Government Threat Actors CTI repository](https://github.com/anpa1200/israel-government-threat-actors-cti)
 - [HexStrike AI repository](https://github.com/0x4m4/hexstrike-ai)
