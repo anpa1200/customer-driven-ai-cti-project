@@ -20,6 +20,7 @@ This page connects the Customer-Driven AI CTI Project to the broader CTI documen
 | [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, acceptance criteria, AI-assisted controls, replay, reporting, and customer delivery artifacts |
 | [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israel-focused actors, tools, TTPs, detections, hunts, evidence registers, and source tracking |
 | [AI vs Defense](https://anpa1200.github.io/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How the skill-floor collapse changes detection strategy, threat-informed CTI requirements, and the 90-day SOC adaptation roadmap |
+| [ThreatMapper](https://anpa1200.github.io/threatmapper-docs/) | Self-hosted AI threat intelligence platform | Automated ATT&CK technique extraction from reports with LLM, APT attribution, interactive Navigator heatmap, campaign overlays, and PDF reports — practical AI-assisted CTI tooling under analyst control |
 | [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## How This Project Fits
@@ -50,6 +51,7 @@ Use [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-gove
 - [Customer-Driven AI CTI Project repository](https://github.com/anpa1200/customer-driven-ai-cti-project)
 - [Israel Government Threat Actors CTI repository](https://github.com/anpa1200/israel-government-threat-actors-cti)
 - [AI vs Defense repository](https://github.com/anpa1200/ai-vs-defense)
+- [ThreatMapper repository](https://github.com/anpa1200/threatmapper)
 - [HexStrike AI repository](https://github.com/0x4m4/hexstrike-ai)
 
 ## Boundary
