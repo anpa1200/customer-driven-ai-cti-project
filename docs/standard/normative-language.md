@@ -42,8 +42,8 @@ Exceptions **MUST** be documented with:
 
 - [Artifact Contracts](artifact-contracts.md) — output artifacts that these requirements govern
 - [Full Workflow Quick Reference](../workflow/full-workflow-quick-reference.md) — phase-by-phase application of MUST/SHOULD requirements
-- [CTI Analyst Field Manual — Evidence Labels](https://anpa1200.github.io/cti-analyst-field-manual/docs/01-cti-foundations/evidence-labels) — canonical labels referenced in SIR and evidence requirements
-- [CTI Analyst Field Manual — Detection Readiness Levels](https://anpa1200.github.io/cti-analyst-field-manual/docs/08-cti-to-detection/detection-readiness-levels) — DRL model that production promotion MUST satisfy
+- [CTI Analyst Field Manual — Evidence Labels](https://1200km.com/cti-analyst-field-manual/docs/01-cti-foundations/evidence-labels) — canonical labels referenced in SIR and evidence requirements
+- [CTI Analyst Field Manual — Detection Readiness Levels](https://1200km.com/cti-analyst-field-manual/docs/08-cti-to-detection/detection-readiness-levels) — DRL model that production promotion MUST satisfy
 
 ## References
 

@@ -135,7 +135,7 @@ The chain is enforced operationally: each phase in Part 2A includes a Chain Inte
 
 ## Evidence Labels
 
-Use these labels in all work products. For the full evidence-labeling model with workflow and worked examples, see [Evidence Labels](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/evidence-labels/) in the CTI Analyst Field Manual.
+Use these labels in all work products. For the full evidence-labeling model with workflow and worked examples, see [Evidence Labels](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/evidence-labels/) in the CTI Analyst Field Manual.
 
 - **Observed:** directly confirmed in customer telemetry, logs, malware analysis, configuration, or source documents.
 - **Customer-reported:** stated by customer personnel or customer documents.
@@ -150,7 +150,7 @@ Use these labels in all work products. For the full evidence-labeling model with
 
 ## Confidence Language
 
-Use confidence on every important judgment. For calibrated wording, source-to-confidence pairing, and worked examples, see [Confidence Language](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/confidence-language/) and [Estimative Language](https://anpa1200.github.io/cti-analyst-field-manual/docs/analytic-discipline/estimative-language/) in the CTI Analyst Field Manual.
+Use confidence on every important judgment. For calibrated wording, source-to-confidence pairing, and worked examples, see [Confidence Language](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/confidence-language/) and [Estimative Language](https://1200km.com/cti-analyst-field-manual/docs/analytic-discipline/estimative-language/) in the CTI Analyst Field Manual.
 
 - **High:** Evidence is direct, corroborated, current, and has a short inference chain.
 - **Moderate:** Evidence is credible but incomplete, partially corroborated, or has plausible alternatives.
@@ -176,7 +176,7 @@ High confidence is not allowed for actor attribution unless evidence includes at
 
 ## Source Reliability and Information Credibility
 
-Every external CTI claim must carry three separate ratings. For the full Admiralty Code reference model with worked examples, see [Source Reliability](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/source-reliability/) in the CTI Analyst Field Manual.
+Every external CTI claim must carry three separate ratings. For the full Admiralty Code reference model with worked examples, see [Source Reliability](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/source-reliability/) in the CTI Analyst Field Manual.
 
 ```text
 Source Reliability:

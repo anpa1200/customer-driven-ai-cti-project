@@ -14,34 +14,34 @@ This page connects the Customer-Driven AI CTI Project to the broader CTI documen
 
 | Project | Role | Use When You Need |
 | --- | --- | --- |
-| [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) | General CTI tradecraft and analyst operating manual | PIR/SIR/EEI, evidence discipline, source reliability, attribution, infrastructure pivoting, actor profiling, hunt hypotheses, detection handoff |
-| [CTI as a Code](https://anpa1200.github.io/CTI_as_a_Code/) | Lab platform and investigation scaffolds | Hands-on lab exercises, reactive/proactive/full-cycle templates, and 8 training assignments with evidence data and worked solutions |
-| [Operation Desert Hydra](https://anpa1200.github.io/operation-desert-hydra/) | Complete CTI-to-detection pipeline reference | Worked example of the full engagement pipeline: source gathering, structured procedures, OpenCTI knowledge graph, detection records, and validated coverage |
-| [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, acceptance criteria, AI-assisted controls, replay, reporting, and customer delivery artifacts |
-| [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israel-focused actors, tools, TTPs, detections, hunts, evidence registers, and source tracking |
-| [AI vs Defense](https://anpa1200.github.io/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How the skill-floor collapse changes detection strategy, threat-informed CTI requirements, and the 90-day SOC adaptation roadmap |
-| [ThreatMapper](https://anpa1200.github.io/threatmapper-docs/) | Self-hosted AI threat intelligence platform | Automated ATT&CK technique extraction from reports with LLM, APT attribution, interactive Navigator heatmap, campaign overlays, and PDF reports — practical AI-assisted CTI tooling under analyst control |
+| [CTI Analyst Field Manual](https://1200km.com/cti-analyst-field-manual/) | General CTI tradecraft and analyst operating manual | PIR/SIR/EEI, evidence discipline, source reliability, attribution, infrastructure pivoting, actor profiling, hunt hypotheses, detection handoff |
+| [CTI as a Code](https://1200km.com/CTI_as_a_Code/) | Lab platform and investigation scaffolds | Hands-on lab exercises, reactive/proactive/full-cycle templates, and 8 training assignments with evidence data and worked solutions |
+| [Operation Desert Hydra](https://1200km.com/operation-desert-hydra/) | Complete CTI-to-detection pipeline reference | Worked example of the full engagement pipeline: source gathering, structured procedures, OpenCTI knowledge graph, detection records, and validated coverage |
+| [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, acceptance criteria, AI-assisted controls, replay, reporting, and customer delivery artifacts |
+| [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israel-focused actors, tools, TTPs, detections, hunts, evidence registers, and source tracking |
+| [AI vs Defense](https://1200km.com/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How the skill-floor collapse changes detection strategy, threat-informed CTI requirements, and the 90-day SOC adaptation roadmap |
+| [ThreatMapper](https://1200km.com/threatmapper-docs/) | Self-hosted AI threat intelligence platform | Automated ATT&CK technique extraction from reports with LLM, APT attribution, interactive Navigator heatmap, campaign overlays, and PDF reports — practical AI-assisted CTI tooling under analyst control |
 | [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## How This Project Fits
 
 This project is the delivery layer. It explains how to run CTI work as a controlled customer or internal security project with gates, artifacts, validation, and acceptance criteria.
 
-Use the [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) when you need the underlying analyst tradecraft behind a phase. Use [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) when you need a realistic actor and sector knowledge base to test the methodology.
+Use the [CTI Analyst Field Manual](https://1200km.com/cti-analyst-field-manual/) when you need the underlying analyst tradecraft behind a phase. Use [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) when you need a realistic actor and sector knowledge base to test the methodology.
 
 ## Cross-Project Workflows
 
 ### Requirements to Delivery Plan
 
-Start with [PIR, SIR, and EEI](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/) in the Field Manual, then apply this project's methodology phases and quality gates to turn requirements into accepted outputs.
+Start with [PIR, SIR, and EEI](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/) in the Field Manual, then apply this project's methodology phases and quality gates to turn requirements into accepted outputs.
 
 ### Detection Candidate to SOC Handoff
 
-Use the Field Manual's [Intelligence to Detection](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-to-detection/intelligence-to-detection/) page for detection reasoning. Use this project for DRL, replay, gate evidence, and customer acceptance. Use the Israel CTI project for actor-specific detections and hunt examples.
+Use the Field Manual's [Intelligence to Detection](https://1200km.com/cti-analyst-field-manual/docs/cti-to-detection/intelligence-to-detection/) page for detection reasoning. Use this project for DRL, replay, gate evidence, and customer acceptance. Use the Israel CTI project for actor-specific detections and hunt examples.
 
 ### Sector Case to Delivery Package
 
-Use [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) as the actor and sector corpus. Use this project to package that corpus into a customer-ready CTI-to-detection engagement.
+Use [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) as the actor and sector corpus. Use this project to package that corpus into a customer-ready CTI-to-detection engagement.
 
 ## Repository Links
 

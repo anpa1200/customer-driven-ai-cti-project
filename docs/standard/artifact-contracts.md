@@ -11,7 +11,7 @@ Artifact contracts define the minimum fields expected for reusable project outpu
 
 ## PIR Register
 
-Use the Field Manual definition of [PIR, SIR, and EEI](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/) as the canonical tradecraft reference.
+Use the Field Manual definition of [PIR, SIR, and EEI](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/) as the canonical tradecraft reference.
 
 A PIR register row **MUST** include:
 
@@ -38,7 +38,7 @@ A SIR register row **MUST** include:
 
 ## Detection Backlog
 
-Use the Field Manual [Detection Backlog](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-to-detection/detection-backlog/) page for analyst-facing backlog semantics.
+Use the Field Manual [Detection Backlog](https://1200km.com/cti-analyst-field-manual/docs/cti-to-detection/detection-backlog/) page for analyst-facing backlog semantics.
 
 A detection backlog row **MUST** include:
 

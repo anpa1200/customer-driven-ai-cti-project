@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://anpa1200.github.io/customer-driven-ai-cti-project/schemas/detection-backlog.schema.json",
+  "$id": "https://1200km.com/customer-driven-ai-cti-project/schemas/detection-backlog.schema.json",
   "title": "Detection Backlog Row",
   "type": "object",
   "required": [
