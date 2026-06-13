@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Customer-Driven AI CTI Project',
   tagline: 'A gate-controlled CTI-to-detection methodology for customer outcomes.',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
