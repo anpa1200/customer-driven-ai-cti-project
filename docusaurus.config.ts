@@ -73,6 +73,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    image: 'img/logo.png',
+    metadata: [
+      {
+        name: 'keywords',
+        content: 'customer-driven CTI, CTI engagement methodology, AI-assisted CTI, threat intelligence methodology, CTI-to-detection workflow, analyst gate, source validation, PIR SIR, MITRE ATT&CK mapping, detection backlog',
+      },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
