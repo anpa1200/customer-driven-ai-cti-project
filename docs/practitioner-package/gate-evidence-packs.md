@@ -3,6 +3,7 @@ id: gate-evidence-packs
 title: Gate Evidence Packs
 sidebar_label: Gate Evidence Packs
 slug: /practitioner-package/gate-evidence-packs
+description: "Gate evidence packs for the customer-driven CTI project: analyst-validated evidence and confidence ratings at each methodology phase gate."
 ---
 
 # Gate Evidence Packs

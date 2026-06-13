@@ -3,6 +3,7 @@ id: attack-mappings
 title: ATT&CK and D3FEND Mappings
 sidebar_label: ATT&CK / D3FEND
 slug: /standard/attack-mappings
+description: "ATT&CK mapping standard for the customer-driven CTI methodology: technique selection criteria, evidence validation, and how mappings connect to customer deliverables."
 ---
 
 # ATT&CK and D3FEND Mappings

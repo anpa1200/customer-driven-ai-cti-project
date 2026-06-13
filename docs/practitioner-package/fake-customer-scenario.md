@@ -3,6 +3,7 @@ id: fake-customer-scenario
 title: Fake Customer Scenario
 sidebar_label: Fake Customer Scenario
 slug: /practitioner-package/fake-customer-scenario
+description: "The LifeTech Pharma fake customer scenario: PIRs, threat landscape, organizational context, and intelligence requirements used throughout the customer-driven CTI worked case."
 ---
 
 # Fake Customer Scenario

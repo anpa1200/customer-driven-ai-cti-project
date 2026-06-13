@@ -2,6 +2,7 @@
 id: ecosystem
 title: Ecosystem
 sidebar_label: Ecosystem
+description: "How the Customer-Driven AI CTI Project connects to the broader 1200km.com ecosystem: CTI Field Manual, actor profiles, ThreatMapper, and detection repositories."
 ---
 
 # CTI Project Ecosystem
