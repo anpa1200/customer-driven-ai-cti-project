@@ -63,7 +63,9 @@ const config: Config = {
       },
     ],
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'AI CTI Project',
