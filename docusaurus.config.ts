@@ -25,25 +25,6 @@ const config: Config = {
   organizationName: 'anpa1200',
   projectName: 'customer-driven-ai-cti-project',
 
-  headTags: [
-    {
-      tagName: 'script',
-      attributes: {
-        async: 'true',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-TMTG21RVHM',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {},
-      innerHTML: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-TMTG21RVHM');
-      `,
-    },
-  ],
 
   onBrokenLinks: 'throw',
 
@@ -65,6 +46,7 @@ const config: Config = {
             'https://github.com/anpa1200/customer-driven-ai-cti-project/tree/main/',
         },
         blog: false,
+        gtag: {trackingID: 'G-TMTG21RVHM', anonymizeIP: true},
         theme: {
           customCss: './src/css/custom.css',
         },
