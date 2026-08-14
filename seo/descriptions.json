@@ -1,0 +1,32 @@
+{
+  "subsiteName": "Customer-Driven AI CTI Project",
+  "descriptions": {
+    "/customer-driven-ai-cti-project/": "Run intelligence work as a gated delivery program that connects customer decisions, validated evidence, threat models, telemetry, and production detections.",
+    "/customer-driven-ai-cti-project/docs/": "Apply a customer-led, AI-assisted threat intelligence method with requirements, evidence controls, analyst gates, telemetry mapping, and measurable outcomes.",
+    "/customer-driven-ai-cti-project/docs/ecosystem": "Navigate the connected 1200km research set and choose the right field manual, actor profiles, workbench, or repository for each stage of CTI delivery.",
+    "/customer-driven-ai-cti-project/docs/fact-correlation": "Keep three connected CTI books consistent by following clear ownership rules for methodology, delivery gates, actor facts, and production-readiness guidance.",
+    "/customer-driven-ai-cti-project/docs/infographics": "Find the published Medium series and its visual assets in one source-linked index covering the workflow, execution method, templates, and reference toolkit.",
+    "/customer-driven-ai-cti-project/docs/methodology/complete-template": "Use one delivery document to move cyber threat intelligence from customer requirements through evidence, telemetry, hunting, detection, validation, and handoff.",
+    "/customer-driven-ai-cti-project/docs/methodology/foundations": "Establish the analytic standards, governance, scoring, roles, artifacts, and readiness criteria required for defensible CTI-to-detection delivery.",
+    "/customer-driven-ai-cti-project/docs/methodology/phase-by-phase-execution-guide": "Execute phases 0–14 with activities, validation tests, templates, evidence gates, and exit criteria for a controlled intelligence-to-detection engagement.",
+    "/customer-driven-ai-cti-project/docs/methodology/reference-toolkit": "Use AI workflow cards, quality gates, registers, worked examples, and delivery artifacts to start and govern a defensible CTI engagement from week one.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package": "Practice the method with a synthetic project kit containing fabricated identities, events, decisions, artifacts, and outcomes for safe replay and training.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package/complete-worked-case": "Trace a synthetic logistics scenario from a CISO decision through PIRs, evidence, telemetry, detection engineering, pilot review, and executive reporting.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package/detection-artifacts": "Inspect the sample Sigma rule, Sentinel and Splunk queries, unit tests, and validation evidence used to detect privileged identity and backup-deletion activity.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package/fake-customer-scenario": "Use a fabricated logistics organization to practice PIR scoping, cloud-identity threat modeling, a 30-day engineering decision, and evidence-led delivery.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package/gate-evidence-packs": "Review sample Gate A–F evidence packages showing analyst validation, confidence records, approval state, and a conditional monitor-only production start.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package/replay-example": "Run the supplied cloud-identity dataset through the replay script and compare the generated JSON result with the expected synthetic detection outcome.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package/sample-registers": "Follow CSV records that connect a customer decision to evidence, intelligence requirements, detection ownership, pilot health, and final acceptance.",
+    "/customer-driven-ai-cti-project/docs/practitioner-package/workflow-output-screenshots": "View synthetic SVG outputs from the worked case, including the register dashboard, replay result, gate status, and executive summary used in the method.",
+    "/customer-driven-ai-cti-project/docs/project-governance/changelog": "Review the documented public release history and the scope of the initial stable documentation package without relying on undocumented product claims.",
+    "/customer-driven-ai-cti-project/docs/project-governance/deprecated": "Check which methodology sections have been retired, what replaces them, and the target removal release; the current public release retires none.",
+    "/customer-driven-ai-cti-project/docs/project-governance/roadmap": "See planned validation, schema, automation, and practitioner-package work while keeping future intentions clearly separated from released capabilities.",
+    "/customer-driven-ai-cti-project/docs/project-governance/versioning": "Understand the semantic release policy for public methodology and artifact changes, including reproducibility expectations and required release records.",
+    "/customer-driven-ai-cti-project/docs/published-articles": "Open canonical Medium sources for the four-part project series and locate the checked-in local copies that preserve the documentation source material.",
+    "/customer-driven-ai-cti-project/docs/standard/artifact-contracts": "Define the minimum fields for reusable PIR, SIR, EEI, evidence, threat-model, and detection outputs so every handoff remains complete and auditable.",
+    "/customer-driven-ai-cti-project/docs/standard/attack-mappings": "Apply evidence-based ATT&CK technique selection and D3FEND relationships, then connect validated mappings to customer decisions and defensive deliverables.",
+    "/customer-driven-ai-cti-project/docs/standard/normative-language": "Interpret MUST, SHOULD, and MAY consistently so requirements remain auditable, exceptions are recorded, and methodology claims retain clear strength.",
+    "/customer-driven-ai-cti-project/docs/standard/schemas-and-validation": "Validate machine-readable examples, telemetry field mappings, links, and replay outputs with the repository checks required before publishing changes.",
+    "/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference": "Move from customer decisions to production detections through a 15-phase operating map with explicit evidence, ownership, validation, and acceptance gates."
+  }
+}

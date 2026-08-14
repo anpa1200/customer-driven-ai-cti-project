@@ -1,11 +1,26 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {execFileSync} from 'node:child_process';
+
+function gitLastModifiedDate(relativePath: string): string | undefined {
+  try {
+    const value = execFileSync('git', ['log', '-1', '--format=%cs', '--', relativePath], {
+      cwd: process.cwd(),
+      encoding: 'utf8',
+    }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+const homepageLastmod = gitLastModifiedDate('src/pages/index.tsx');
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Customer-Driven AI CTI Project',
+  title: '1200km',
   tagline: 'A gate-controlled CTI-to-detection methodology for customer outcomes.',
   favicon: 'img/logo.png',
 
@@ -37,6 +52,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: ['./seo-metadata-plugin.cjs'],
+
   presets: [
     [
       'classic',
@@ -45,8 +62,18 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/anpa1200/customer-driven-ai-cti-project/tree/main/',
+          showLastUpdateTime: true,
         },
         blog: false,
+        sitemap: {
+          lastmod: 'date',
+          createSitemapItems: async ({defaultCreateSitemapItems, ...params}) => {
+            const items = await defaultCreateSitemapItems(params);
+            return items.map((item) => item.url === 'https://1200km.com/customer-driven-ai-cti-project/' && homepageLastmod
+              ? {...item, lastmod: item.lastmod || homepageLastmod}
+              : item);
+          },
+        },
         gtag: {trackingID: 'G-TMTG21RVHM', anonymizeIP: true},
         theme: {
           customCss: './src/css/custom.css',
@@ -56,8 +83,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo.png',
+    image: 'img/articles/workflow/01-5961f199fd.png',
     metadata: [
+      {
+        property: 'og:site_name',
+        content: '1200km — Andrey Pautov Security Research',
+      },
       {
         name: 'keywords',
         content: 'customer-driven CTI, CTI engagement methodology, AI-assisted CTI, threat intelligence methodology, CTI-to-detection workflow, analyst gate, source validation, PIR SIR, MITRE ATT&CK mapping, detection backlog',
@@ -93,7 +124,7 @@ const config: Config = {
             {label: 'Customer-Driven AI CTI', href: 'https://1200km.com/customer-driven-ai-cti-project/'},
             {label: 'Israel Threat Actors CTI', href: 'https://1200km.com/israel-government-threat-actors-cti/'},
             {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
-            {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
+            {label: 'HexStrike AI (upstream project)', href: 'https://github.com/0x4m4/hexstrike-ai'},
             {label: 'AdversaryGraph Docs', href: 'https://1200km.com/adversarygraph-docs/'},
           ],
         },
@@ -142,7 +173,7 @@ const config: Config = {
             {label: 'Customer-Driven AI CTI', href: 'https://1200km.com/customer-driven-ai-cti-project/'},
             {label: 'Israel Threat Actors CTI', href: 'https://1200km.com/israel-government-threat-actors-cti/'},
             {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
-            {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
+            {label: 'HexStrike AI (upstream project)', href: 'https://github.com/0x4m4/hexstrike-ai'},
             {label: 'AdversaryGraph Docs', href: 'https://1200km.com/adversarygraph-docs/'},
           ],
         },
