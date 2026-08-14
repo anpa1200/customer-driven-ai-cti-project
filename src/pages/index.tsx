@@ -1,10 +1,14 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+
+const PROJECT_TITLE = 'Customer-Driven AI CTI Project';
+const PAGE_DESCRIPTION = 'Run intelligence work as a gated delivery program that connects customer decisions, validated evidence, threat models, telemetry, and production detections.';
 
 const cards = [
   {
@@ -29,6 +33,15 @@ const cards = [
   },
 ];
 
+const breadcrumbStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {'@type': 'ListItem', position: 1, name: '1200km', item: 'https://1200km.com/'},
+    {'@type': 'ListItem', position: 2, name: 'Customer-Driven AI CTI Project', item: 'https://1200km.com/customer-driven-ai-cti-project/'},
+  ],
+};
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -36,7 +49,7 @@ function HomepageHeader() {
       <div className="container">
         <p className={styles.kicker}>CTI to Detection Engineering</p>
         <Heading as="h1" className={styles.title}>
-          {siteConfig.title}
+          {PROJECT_TITLE}
         </Heading>
         <p className={styles.subtitle}>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
@@ -53,11 +66,15 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
-      description="Docusaurus site for the Customer-Driven AI CTI Project methodology.">
+      title={PROJECT_TITLE}
+      description={PAGE_DESCRIPTION}>
+      <Head>
+        <meta name="twitter:title" content={`${PROJECT_TITLE} | 1200km`} />
+        <meta name="twitter:description" content={PAGE_DESCRIPTION} />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbStructuredData)}</script>
+      </Head>
       <HomepageHeader />
       <main className={styles.main}>
         <section className="container">

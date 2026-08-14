@@ -23,7 +23,7 @@ This page connects the Customer-Driven AI CTI Project to the broader CTI documen
 | [AI vs Defense](https://1200km.com/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How the skill-floor collapse changes detection strategy, threat-informed CTI requirements, and the 90-day SOC adaptation roadmap |
 | [AdversaryGraph AI CTI workbench](https://1200km.com/adversarygraph/) | Public Web workspace plus self-hosted Docker platform | Analyst-assisted ATT&CK mapping, group and campaign similarity, coverage-gap analysis, and detection-backlog support |
 | [The Intelligent Shield — OpenCTI](https://1200km.com/opencti-intelligent-shield/) | AI-powered CTI platform deployment guide | OpenCTI setup with STIX 2.1, free/commercial/ISAC feeds, Claude AI enrichment connector, inference rules, security hardening, and real investigation workflows |
-| [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
+| [HexStrike AI (upstream project)](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## How This Project Fits
 
@@ -55,7 +55,7 @@ Use [Israel Government Threat Actors CTI](https://1200km.com/israel-government-t
 - [AI vs Defense repository](https://github.com/anpa1200/ai-vs-defense)
 - [AdversaryGraph repository](https://github.com/anpa1200/adversarygraph)
 - [The Intelligent Shield repository](https://github.com/anpa1200/opencti-intelligent-shield)
-- [HexStrike AI repository](https://github.com/0x4m4/hexstrike-ai)
+- [HexStrike AI (upstream project)](https://github.com/0x4m4/hexstrike-ai)
 
 ## Boundary
 
