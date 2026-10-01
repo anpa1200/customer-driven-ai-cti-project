@@ -113,7 +113,7 @@ Source -> Claim -> Evidence -> Assessment -> Customer Relevance -> Scenario -> O
 
 The chain prevents the project from becoming a document factory. If an item cannot move across the chain, it should be treated as context, backlog, or a collection gap rather than a finished intelligence or engineering output.
 
-#
+##
 ![Part 1: Foundations infographic 03](/img/articles/part-1-foundations/03-4e9977d598.png)
 
 ## Chain Validation
@@ -159,7 +159,7 @@ Use confidence on every important judgment. For calibrated wording, source-to-co
 
 Probability and confidence are different. "Likely" describes probability. "Moderate confidence" describes evidentiary strength.
 
-#
+##
 ![Part 1: Foundations infographic 05](/img/articles/part-1-foundations/05-0ac3732947.png)
 
 ## Minimum Confidence Criteria
@@ -233,7 +233,7 @@ Express both ratings as a two-character code: `[Source Reliability][Information 
 
 *Note on the F rating convention:* The FIRST CTI SIG Source Evaluation framework defines F as "Cannot be judged — insufficient data to assess reliability." An alternative convention (EOS Admiralty Code) defines F as "Proven false or misleading source" and uses E for unknown/unassessable sources. This template follows the FIRST CTI SIG convention: **F = cannot be judged; E = unreliable with known track record of inaccuracy.** Document your organisation's chosen convention in the project charter and apply it consistently across all source ratings.
 
-#
+##
 ![Part 1: Foundations infographic 07](/img/articles/part-1-foundations/07-f184e356b4.png)
 
 ## Rating AI-Generated Intelligence
@@ -315,7 +315,7 @@ Use both risk and feasibility labels:
 | Control weakness | 5 | No identity-to-storage correlation; 14-day log retention; no detection at any DRL for this path |
 | **Likelihood score** | **4** | (5+4+4+3+5) / 5 = 4.2, rounded to 4 |
 
-#
+##
 ![Part 1: Foundations infographic 08](/img/articles/part-1-foundations/08-f8cb28361f.png)
 
 ## Example Score Table
@@ -339,7 +339,7 @@ Run this before choosing delivery scope. A customer with low maturity may need a
 - **Legal/privacy process** — Level 0: None — Level 1: Ad hoc review — Level 2: Approval path exists — Level 3: Embedded in workflow gates
 
 
-#
+##
 ![Part 1: Foundations infographic 09](/img/articles/part-1-foundations/09-4faf836710.png)
 
 ## Readiness-Based Mode Selection
@@ -354,7 +354,7 @@ Run this before choosing delivery scope. A customer with low maturity may need a
 
 Use implementation modes to keep the project executable.
 
-#
+##
 ![Part 1: Foundations infographic 10](/img/articles/part-1-foundations/10-a851a3aaa5.png)
 
 ## Mode 1: Lightweight Assessment
@@ -474,7 +474,7 @@ AI is not allowed to:
 - process restricted data unless approved by the customer's data-handling policy;
 - decide legal, regulatory, or public-disclosure actions.
 
-#
+##
 ![Part 1: Foundations infographic 11](/img/articles/part-1-foundations/11-1bc6e9b0ff.png)
 
 ## AI OPSEC Classification
@@ -511,7 +511,7 @@ AI Use Log entry ID:
 
 Detection of forbidden data in a session must be logged in the RAID Register as an incident, with the CTI lead and customer security lead notified within 24 hours.
 
-#
+##
 ![Part 1: Foundations infographic 12](/img/articles/part-1-foundations/12-cb5ad016e5.png)
 
 ## AI Operating Controls
@@ -557,7 +557,7 @@ Direct review means the reviewer reads the AI output, compares it with the AI Us
 
 *Part 2B gates: [Gate A: PIR Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#4723) · [Gate B: Scenario Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#bb2e) · [Gate C: Hunt Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#603b) · [Gate D: Detection Design Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#e2a1) · [Gate E: Production Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#30a9) · [Gate F: Final Delivery Approval](https://medium.com/@1200km/customer-driven-ai-cti-project-template-part-2b-reference-toolkit-3a56fab0b943#3db7)*
 
-#
+##
 ![Part 1: Foundations infographic 13](/img/articles/part-1-foundations/13-9e6166edb6.png)
 
 ## Prompt-Injection Handling
@@ -599,7 +599,7 @@ The AI use log itself is a sensitive artifact. It must never store raw secrets, 
 - **Public final report text** — Public AI Allowed: Yes — Private AI Allowed: Yes — Requires Redaction: As required — Prohibited: No — Approval Owner: CTI lead
 
 
-#
+##
 ![Part 1: Foundations infographic 14](/img/articles/part-1-foundations/14-6deceecb08.png)
 
 ## Pre-Screening Data Classification Tiers
@@ -669,7 +669,7 @@ Tool approval requirements:
 
 AI tool approval must be completed within 5 business days of project charter signing. If no tool is approved, all AI workflows are disabled and the project mode must be updated accordingly.
 
-#
+##
 ![Part 1: Foundations infographic 16](/img/articles/part-1-foundations/16-e43ce0610f.png)
 
 ## Public AI SaaS Acceptability Decision Table
@@ -820,7 +820,7 @@ When the customer has an operational threat intelligence platform (e.g., MISP, O
 
 ## Intelligence Requirements
 
-#
+##
 ![Part 1: Foundations infographic 22](/img/articles/part-1-foundations/22-c23736af74.png)
 
 ## Definitions
@@ -988,7 +988,7 @@ Rules:
 - Candidate mappings must be resolved or explicitly rejected before Gate F.
 - Only Coverage Status "Covered" may be counted in customer-facing ATT&CK coverage claims.
 
-#
+##
 ![Part 1: Foundations infographic 24](/img/articles/part-1-foundations/24-acdee497d8.png)
 
 ## D3FEND Countermeasure Mapping
@@ -1047,7 +1047,7 @@ Rules:
 - DRL-7 and DRL-8 may be reported as pilot candidates or pilot detections.
 - Every level transition requires evidence in the Detection Health Register or test evidence.
 
-#
+##
 ![Part 1: Foundations infographic 26](/img/articles/part-1-foundations/26-b1b467bad3.png)
 
 ## DRL Transition Evidence Requirements
@@ -1115,7 +1115,7 @@ The False-Negative Register tracks cases where a detection rule failed to fire o
 
 Use this for planning, not as a fixed promise. Complexity depends on access, customer maturity, tooling, stakeholders, and data quality.
 
-#
+##
 ![Part 1: Foundations infographic 29](/img/articles/part-1-foundations/29-48eb393ac5.png)
 
 ## Complexity Decision Matrix

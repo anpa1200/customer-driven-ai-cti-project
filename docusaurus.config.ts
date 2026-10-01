@@ -1,3 +1,4 @@
+import applyTechnicalSitemap from './technical-seo-sitemap.cjs';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -53,7 +54,7 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: ['./seo-metadata-plugin.cjs'],
+  plugins: ['./technical-seo-plugin.cjs', './seo-metadata-plugin.cjs'],
 
   presets: [
     [
@@ -201,4 +202,5 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
+applyTechnicalSitemap(config);
 export default config;
